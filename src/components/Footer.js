@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby";
 import React from "react";
+import Social from "./Social";
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -17,11 +18,9 @@ const Footer = () => {
   const { title, description, siteUrl } = data.site.siteMetadata;
 
   return (
-    <div>
-      <p>Footer</p>
-      <p>{title}</p>
-      <p>{description}</p>
-      <p>{siteUrl}</p>
+    <div className="my-20">
+      <p className="font-light text-lg">Designed and developed by Emre.</p>
+      <Social />
     </div>
   );
 };

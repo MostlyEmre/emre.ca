@@ -1,18 +1,64 @@
 import * as React from "react";
-
+import "../styles/global.css";
+import { SiCss3, SiFirebase, SiHtml5, SiJavascript, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FaUserAstronaut, FaLocationArrow } from "react-icons/fa";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import { motion } from "framer-motion";
 // markup
 const IndexPage = () => {
   return (
-    <main>
+    <main className="w-11/12 md:w-10/12 m-auto text-gray-900">
       <title>Home Page</title>
-      <p>👋 I'm Emre (Pronounced: Am + Rae)</p>
-      <p>📍 A Toronto-based front-end developer.</p>
-      <p>Welcome to my personal website / portfolio!</p>
+      <Header />
+      <div className="mb-10">
+        <p className="font-bold text-5xl my-4 cursor-default">
+          Hello, I'm Emre! <sub className="font-medium text-sm text-pink-500">/Am + Rae/</sub>
+        </p>
+        <div className="flex cursor-default">
+          <div className="inline-block self-center text-3xl mr-4">🧑🏼‍🚀</div>
+          <p className="font-light text-2xl my-2 inline-block text-gray-900">Frontend Developer</p>
+        </div>
 
-      {/* <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      /> */}
+        <div className="flex cursor-default">
+          <div className="inline-block self-center text-3xl mr-4">📍</div>
+
+          <p className="font-light text-2xl my-2 inline-block text-gray-900">Toronto, ON</p>
+        </div>
+      </div>
+
+      {/* Technical Skills */}
+      <div className="my-10 inline-block">
+        <h2 className="h2 mb-10 sm:mb-5 text-center sm:text-left">Technical Skills</h2>
+        <div className="sm:mb-0 text-center">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="inline-block">
+            <SiHtml5 className="skill text-red-500" />
+          </motion.div>
+          <SiCss3 className="skill text-blue-500" />
+          <SiJavascript className="skill text-yellow-300 bg-black" />
+          <SiReact className="skill text-purple-500" />
+          <SiTypescript className="skill text-blue-500 bg-white" />
+          <SiTailwindcss className="skill text-blue-500" />
+          <SiFirebase className="skill text-yellow-500" />
+        </div>
+      </div>
+      {/* fun fact */}
+      <div className="w-6/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
+        <p>Did you know that I was a product designer before changing careers?</p>
+      </div>
+      {/* References */}
+      <div>
+        <p>What do people I've worked with think of me?</p>
+      </div>
+      {/* About Me */}
+      <div>
+        <h2 className="h2">About Me</h2>
+      </div>
+      {/* Contact */}
+      <div>
+        <h2 className="h2">Contact</h2>
+      </div>
+      <Footer />
     </main>
   );
 };

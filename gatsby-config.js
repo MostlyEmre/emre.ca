@@ -5,6 +5,7 @@ module.exports = {
     description: "Emre's Portfolio, Blog, and Shananigans...",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     {
       resolve: `gatsby-transformer-remark`,
       options: {

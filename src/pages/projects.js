@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { v4 as uuidv4 } from "uuid";
-
+import "../styles/global.css";
 const ProjectsPage = ({ data }) => {
   // const { title, stack, slug } = data.allMarkdownRemark.nodes.frontmatter;
   console.log(data);

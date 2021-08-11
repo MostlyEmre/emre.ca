@@ -17,12 +17,20 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.10.2",
     "gatsby-plugin-mdx": "^2.11.0",
     "gatsby-source-filesystem": "^3.11.0",
     "gatsby-transformer-remark": "^4.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
     "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "gatsby-plugin-postcss": "^4.11.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }
