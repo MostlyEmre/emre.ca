@@ -7,7 +7,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <ul className="list-none text-center sm:text-left">
+      <ul className="list-none">
         {menuItems.map((item) => (
           <div className="animation inline-block mr-4 mt-10 text-gray-500 hover:text-gray-900 text-lg" key={uuidv4()}>
             <Link to={`/${item.toLowerCase()}`}>
