@@ -3,6 +3,8 @@ import React from "react";
 import * as SimpleIcons from "react-icons/si";
 import { motion } from "framer-motion";
 
+// https://stackoverflow.com/questions/65960909/gatsby-dynamic-styling-not-working-in-production-build
+
 const SkillCard = ({ skill }) => {
   const icon = React.createElement(SimpleIcons[skill.icon]);
 
@@ -13,7 +15,7 @@ const SkillCard = ({ skill }) => {
           className={`flex justify-between items-center px-4 py-2 bg-gray-900 font-bold text-gray-50
     `}
         >
-          <span className={`text-${skill.color} mr-2 text-xl`}>{icon}</span>
+          <span className={`${skill.color} mr-2 text-xl`}>{icon}</span>
           <span>{skill.name}</span>
         </div>
       </Link>
