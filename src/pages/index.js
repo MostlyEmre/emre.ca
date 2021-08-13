@@ -1,17 +1,16 @@
 import * as React from "react";
 import "../styles/global.css";
-import { SiCss3, SiFirebase, SiHtml5, SiJavascript, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { FaUserAstronaut, FaLocationArrow } from "react-icons/fa";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { motion } from "framer-motion";
+import Skills from "../components/Skills";
+import Trakt from "../components/Trakt";
 // markup
 const IndexPage = () => {
   return (
-    <main className="w-11/12 md:w-10/12 m-auto text-gray-900">
+    <main className="w-11/12 md:ml-10 md:w-12/12 m-auto text-gray-900">
       <title>Home Page</title>
       <Header />
-      <div className="mb-10">
+      <div className="mb-5 inline-block border-b-2 pb-5">
         <p className="font-bold text-5xl my-4 cursor-default">
           Hello, I'm Emre! <sub className="font-medium text-sm text-pink-500">/Am + Rae/</sub>
         </p>
@@ -28,22 +27,14 @@ const IndexPage = () => {
       </div>
 
       {/* Technical Skills */}
-      <div className="my-10 inline-block">
-        <h2 className="h2 mb-10 sm:mb-5 text-center sm:text-left">Technical Skills</h2>
-        <div className="sm:mb-0 text-center">
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="inline-block">
-            <SiHtml5 className="skill text-red-500" />
-          </motion.div>
-          <SiCss3 className="skill text-blue-500" />
-          <SiJavascript className="skill text-yellow-300 bg-black" />
-          <SiReact className="skill text-purple-500" />
-          <SiTypescript className="skill text-blue-500 bg-white" />
-          <SiTailwindcss className="skill text-blue-500" />
-          <SiFirebase className="skill text-yellow-500" />
-        </div>
+      <div className=" mb-10 2xl:w-3/12">
+        <h2 className="h2 mb-5">Technical Skills</h2>
+        <Skills />
       </div>
+      {/* Past Clients */}
+      <div></div>
       {/* fun fact */}
-      <div className="w-6/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
+      <div className="w-6/12 2xl:w-3/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
         <p>Did you know that I was a product designer before changing careers?</p>
       </div>
       {/* References */}
@@ -54,6 +45,7 @@ const IndexPage = () => {
       <div>
         <h2 className="h2">About Me</h2>
       </div>
+      <Trakt />
       {/* Contact */}
       <div>
         <h2 className="h2">Contact</h2>
