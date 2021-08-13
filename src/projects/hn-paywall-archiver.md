@@ -6,6 +6,7 @@ description: NodeJS script that checks and archives the latest paywalled Hacker 
 features:
 duration: 2 Weeks
 solo: true
+wip: false
 type: Website
 live: https://hpa.emre.la
 source: https://github.com/EmreYYZ/HN-Paywall-Archiver
