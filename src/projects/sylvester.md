@@ -8,5 +8,6 @@ duration: 2 days
 solo: true
 type: Chrome Extension
 live: null
+wip: false
 source: https://github.com/EmreYYZ/Sylvester
 ---

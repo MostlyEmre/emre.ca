@@ -7,6 +7,7 @@ features: [Fully Responsive, Chat-Box, CSS Playing Cards, React Router]
 duration: 1 Week
 type: Website
 solo: true
+wip: false
 live: https://war.emre.la
 source: https://github.com/EmreYYZ/warg8
 ---

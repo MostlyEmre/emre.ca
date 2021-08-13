@@ -8,5 +8,6 @@ duration: 2 days
 solo: true
 type: Chrome Extension
 live: null
+wip: true
 source: https://github.com/EmreYYZ/emre.la
 ---

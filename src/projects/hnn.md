@@ -6,6 +6,7 @@ description: A paywall-aware Hacker News reader.
 features: [Pagination, Favorites, Persistent localStorage, Comments]
 duration: 1 Week
 solo: true
+wip: false
 type: Website
 live: https://hn.emre.la
 source: https://github.com/EmreYYZ/hnn
