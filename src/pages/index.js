@@ -27,7 +27,7 @@ const IndexPage = () => {
       </div>
 
       {/* Technical Skills */}
-      <div className=" mb-10 2xl:w-3/12">
+      <div className=" mb-10 2xl:w-3/12 xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-7/12">
         <h2 className="h2 mb-5">Technical Skills</h2>
         <Skills />
       </div>
