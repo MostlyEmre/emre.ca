@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TraktMovies = () => {
   const [movies, setMovies] = useState([]);
-  const [moviesLoading, setMoviesLoading] = true;
+  const [moviesLoading, setMoviesLoading] = useState(true);
 
   // useEffect get shows
   if (moviesLoading) {

@@ -3,7 +3,7 @@ import { SiTrakt, SiImdb } from "react-icons/si";
 import { motion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
-const TraktShows = ({ config }) => {
+const TraktShows = ({ config, tmdbAPI }) => {
   const [shows, setShows] = useState([]);
   const [showsLoading, setShowsLoading] = useState(true);
 
@@ -16,8 +16,22 @@ const TraktShows = ({ config }) => {
       .then((response) => response.json())
       .then((data) => {
         let firstThree = data.slice(0, 3);
+
+        firstThree.map((show) => {
+          console.log(show);
+          let tmdbURL = `https://api.themoviedb.org/3/tv/${show.show.ids.tmdb}/season/${show.episode.season}/episode/${show.episode.number}/images?api_key=${tmdbAPI}`;
+          console.log(tmdbURL);
+          fetch(tmdbURL)
+            .then((response) => response.json())
+            .then((data) => {
+              show.image = `https://image.tmdb.org/t/p/w${data.stills[0].width}${data.stills[0].file_path}`;
+            })
+            .catch((err) => console.log(err));
+        });
+
         setShows(firstThree);
       });
+
     setShowsLoading(false);
   };
 
@@ -30,7 +44,7 @@ const TraktShows = ({ config }) => {
   }, []);
 
   // useEffect get shows
-  if (!showsLoading) {
+  if (showsLoading) {
     return (
       <div>
         <p className="inline-flex items-center cursor-default my-5">
@@ -51,6 +65,7 @@ const TraktShows = ({ config }) => {
       <h3 className="text-2xl font-bold">Latest Episodes I've Seen</h3>
       {shows.map((show) => (
         <div key={uuidv4()} className="my-2 inline-block bg-gray-900 text-gray-50 px-5 rounded-lg pt-3 pb-5 mr-4 mb-4">
+          <p>{show.image}</p>
           <p className="text-md font-light">{show.show.title}</p>
 
           <p className="text-sm font-bold mb-5">{show.episode.title}</p>
@@ -65,6 +80,8 @@ const TraktShows = ({ config }) => {
             </a>
             {/* <p>Trakt: {show.episode.ids.trakt}</p> */}
           </motion.div>
+
+          <img src={show.image} alt={show.show.title} />
         </div>
       ))}
     </div>

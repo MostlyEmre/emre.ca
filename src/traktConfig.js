@@ -8,3 +8,5 @@ export const traktConfig = {
     "trakt-api-version": 2,
   },
 };
+
+export const tmdbAPI = "c4e0e43db456cb63f04bead90cf06afc";

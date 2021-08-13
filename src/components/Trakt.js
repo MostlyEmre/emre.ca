@@ -1,7 +1,7 @@
 import React from "react";
 import TraktShows from "./TraktShows";
 import TraktMovies from "./TraktMovies";
-import { traktConfig } from "../traktConfig";
+import { traktConfig, tmdbAPI } from "../traktConfig";
 
 const Trakt = () => {
   const dbInfo = [
@@ -19,8 +19,8 @@ const Trakt = () => {
 
   return (
     <div>
-      <TraktShows config={traktConfig} />
-      <TraktMovies config={traktConfig} />
+      <TraktShows config={traktConfig} tmdbAPI={tmdbAPI} />
+      <TraktMovies config={traktConfig} tmdbAPI={tmdbAPI} />
     </div>
   );
 };
