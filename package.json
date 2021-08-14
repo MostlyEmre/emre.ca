@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.10.2",
     "gatsby-plugin-mdx": "^2.11.0",

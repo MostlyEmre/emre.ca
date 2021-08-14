@@ -9,4 +9,5 @@ clients:
     { name: George Brown College, position: Researcher, duration: Apr. 2018 - May 2020, type: Contract, time: Part-time, location: Toronto, url: https://www.gbcresearch.ca/, logo },
     { name: Citibank, position: Anti Money Laundering Analyst, duration: Dec. 2015 - Dec. 2016, type: Permanent, time: Full-Time, location: Istanbul, url: https://www.mldsolutions.com/, logo },
   ]
+type: Past Clients
 ---

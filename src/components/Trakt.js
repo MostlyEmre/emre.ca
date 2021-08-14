@@ -19,8 +19,9 @@ const Trakt = () => {
 
   return (
     <div>
-      <TraktShows config={traktConfig} tmdbAPI={tmdbAPI} />
       <TraktMovies config={traktConfig} tmdbAPI={tmdbAPI} />
+
+      <TraktShows config={traktConfig} tmdbAPI={tmdbAPI} />
     </div>
   );
 };

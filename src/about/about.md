@@ -2,17 +2,17 @@
 title: about
 skills:
   [
-    { name: HTML, slug: html, icon: SiHtml5, color: text-red-500 },
-    { name: CSS, slug: css, icon: SiCss3, color: text-blue-500 },
-    { name: JavaScript, slug: javascript, icon: SiJavascript, color: text-yellow-300 },
-    { name: TypeScript, slug: typescript, icon: SiTypescript, color: text-blue-500 },
+    { name: HTML, slug: html, icon: SiHtml5, color: text-red-400 },
+    { name: CSS, slug: css, icon: SiCss3, color: text-blue-400 },
+    { name: JavaScript, slug: javascript, icon: SiJavascript, color: text-yellow-400 },
+    { name: TypeScript, slug: typescript, icon: SiTypescript, color: text-blue-400 },
     { name: React JS, slug: react, icon: SiReact, color: text-purple-400 },
-    { name: Gatsby JS, slug: gatsby, icon: SiGatsby, color: text-pink-600 },
-    { name: Tailwind CSS, slug: tailwind-css, icon: SiTailwindcss, color: text-blue-500 },
-    { name: Firebase, slug: firebase, icon: SiFirebase, color: text-yellow-500 },
-    { name: Framer Motion, slug: framer-motion, icon: SiFramer, color: text-purple-500 },
+    { name: Gatsby JS, slug: gatsby, icon: SiGatsby, color: text-pink-400 },
+    { name: Tailwind CSS, slug: tailwind-css, icon: SiTailwindcss, color: text-blue-400 },
+    { name: Firebase, slug: firebase, icon: SiFirebase, color: text-yellow-400 },
+    { name: Framer Motion, slug: framer-motion, icon: SiFramer, color: text-purple-400 },
   ]
-tools: [{ name: Figma, slug: figma, icon: SiFigma, color: text-pink-500 }, { name: Adobe Creative Suite, slug: adobe-creative-suite, icon: SiAdobe, color: text-red-500 }]
+tools: [{ name: Figma, slug: figma, icon: SiFigma, color: text-pink-400 }, { name: Adobe Creative Suite, slug: adobe-creative-suite, icon: SiAdobe, color: text-red-400 }]
 social:
   [
     { name: GitHub, url: https://github.com/EmreYYZ, icon: SiGithub, color: text-gray-900 },

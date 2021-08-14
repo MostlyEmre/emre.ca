@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Trakt from "../components/Trakt";
 const About = () => {
   const [imgURL, setImgURL] = useState([]);
 
@@ -10,9 +10,7 @@ const About = () => {
   return (
     <div>
       <p>About meee</p>
-      {imgURL.map((img) => (
-        <img src={img} alt="hello" />
-      ))}
+      <Trakt />
     </div>
   );
 };

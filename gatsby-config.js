@@ -45,6 +45,13 @@ module.exports = {
         path: `${__dirname}/src/about`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `testimonials`,
+        path: `${__dirname}/src/testimonials`,
+      },
+    },
     `gatsby-plugin-mdx`,
   ],
 };

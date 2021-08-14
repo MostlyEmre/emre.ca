@@ -4,6 +4,7 @@ linkedin: https://www.linkedin.com/in/henriquesalvador42/
 position: Product Designer
 company: Nulogy
 image: https://media-exp1.licdn.com/dms/image/C4E03AQF9fCKbIF-TFw/profile-displayphoto-shrink_800_800/0/1581973415193?e=1634169600&v=beta&t=orSgWs6GxgCKgv3VtR2xOeWL0d6J6HNKa4E1XXZzXyQ
+type: Testimonials
 ---
 
 It was a blast having Emre as a teammate! I had the pleasure of working alongside him in different UX Research and Design projects for over a year at George Brown. I was continuously impressed by Emre's commitment to our projects, professionalism towards our clients, and immense design talent.
