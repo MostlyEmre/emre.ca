@@ -10,7 +10,6 @@ const TraktMovies = ({ config, tmdbAPI }) => {
   const newMovieURL = `${config.corsBase}${config.baseURL}/users/${config.user}/history/movies`;
 
   const getMovies = (config) => {
-    console.log(`Running get movies.`);
     setMovies([]);
 
     fetch(newMovieURL, {
@@ -21,12 +20,10 @@ const TraktMovies = ({ config, tmdbAPI }) => {
         let watchedMovies = data.slice(0, 3);
 
         watchedMovies.map((movie) => {
-          console.log(movie);
           let tmdbURL = `https://api.themoviedb.org/3/movie/${movie.movie.ids.tmdb}/images?api_key=${tmdbAPI}`;
           fetch(tmdbURL)
             .then((response) => response.json())
             .then((data) => {
-              console.log(data);
               movie.thumb = `https://image.tmdb.org/t/p//original${data.backdrops[0].file_path}`;
               setMovies((movies) => [...movies, movie]);
             })
@@ -38,7 +35,6 @@ const TraktMovies = ({ config, tmdbAPI }) => {
   };
 
   useEffect(() => {
-    console.log(`Initiate useEffectGetMovies`);
     getMovies(config);
     // const unsubscribe = "",
     // return () => {

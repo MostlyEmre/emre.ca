@@ -10,7 +10,6 @@ const TraktShows = ({ config, tmdbAPI }) => {
   const newURL = `${config.corsBase}${config.baseURL}/users/${config.user}/history/episodes`;
 
   const getShows = (config) => {
-    console.log(`Running get shows.`);
     setShows([]);
 
     fetch(newURL, {
@@ -36,7 +35,6 @@ const TraktShows = ({ config, tmdbAPI }) => {
   };
 
   useEffect(() => {
-    console.log(`Initiate useEffectGetShows`);
     getShows(config);
     // const unsubscribe = "",
     // return () => {

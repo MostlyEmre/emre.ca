@@ -40,14 +40,7 @@ const IndexPage = () => {
       </div>
       {/* References */}
       <PastClients />
-      <div>
-        <p>What do people I've worked with think of me?</p>
-      </div>
-      {/* About Me */}
-      <div>
-        <h2 className="h2">About Me</h2>
-      </div>
-      <Trakt />
+
       {/* Contact */}
       <div>
         <h2 className="h2">Contact</h2>
