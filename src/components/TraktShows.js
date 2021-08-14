@@ -11,6 +11,8 @@ const TraktShows = ({ config, tmdbAPI }) => {
 
   const getShows = (config) => {
     console.log(`Running get shows.`);
+    setShows([]);
+
     fetch(newURL, {
       headers: config.headers,
     })
@@ -24,11 +26,10 @@ const TraktShows = ({ config, tmdbAPI }) => {
             .then((response) => response.json())
             .then((data) => {
               show.thumb = `https://image.tmdb.org/t/p/w${data.stills[0].width}${data.stills[0].file_path}`;
+              setShows((shows) => [...shows, show]);
             })
             .catch((err) => console.log(err));
         });
-
-        setShows(firstThree);
       });
 
     setShowsLoading(false);
