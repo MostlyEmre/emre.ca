@@ -35,16 +35,11 @@ const IndexPage = () => {
       {/* Past Clients */}
       <div></div>
       {/* fun fact */}
-      <div className="w-6/12 2xl:w-3/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
+      {/* <div className="w-6/12 2xl:w-3/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
         <p>Did you know that I was a product designer before changing careers?</p>
-      </div>
+      </div> */}
       {/* References */}
       <PastClients />
-
-      {/* Contact */}
-      <div>
-        <h2 className="h2">Contact</h2>
-      </div>
       <Footer />
     </main>
   );

@@ -32,21 +32,4 @@ const Skills = () => {
   );
 };
 
-// export const query = graphql`
-//   query SkillsQuery {
-//     allMarkdownRemark(filter: { frontmatter: { title: { eq: "about" } } }) {
-//       nodes {
-//         frontmatter {
-//           skills {
-//             color
-//             icon
-//             name
-//             slug
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
 export default Skills;

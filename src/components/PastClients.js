@@ -43,7 +43,7 @@ export const PastClients = () => {
     <div className=" mb-10 2xl:w-3/12 xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-7/12">
       <h2 className="h2 mb-5">Past Clients</h2>
 
-      <h2 className="h2 mb-5">Witnessed me</h2>
+      <h2 className="h2 mb-5">People Kinda Like Me</h2>
       {testimonialData.allMarkdownRemark.nodes.map((testimonial) => (
         <TestimonialCard testimonial={testimonial} />
       ))}

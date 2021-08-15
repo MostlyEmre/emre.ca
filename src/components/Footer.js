@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <div className="my-20">
-      <p className="font-light text-lg">Designed and developed by Emre.</p>
+      <p className="font-light text-gray-400 text-lg cursor-default">Designed and developed by me.</p>
       <Social />
     </div>
   );
