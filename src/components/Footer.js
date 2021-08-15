@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <div className="mt-20 inline-block border-t-2 pt-5 mb-5">
-      <p className="font-light text-gray-400 text-lg cursor-default">Designed and developed by me.</p>
+      <p className="font-light text-gray-400 cursor-default">Designed and developed by me.</p>
       <Social />
     </div>
   );
