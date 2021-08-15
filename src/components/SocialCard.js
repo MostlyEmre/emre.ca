@@ -9,7 +9,7 @@ const SocialCard = ({ social }) => {
   const icon = React.createElement(SimpleIcons[social.icon]);
 
   return (
-    <motion.div className="inline-block mr-6 mb-2 text-3xl" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+    <motion.div className="inline-block mr-6 text-3xl" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
       <a href={social.url} className={`animation text-gray-400 hover:${social.color}`} target="_blank" rel="noopener noreferrer">
         {icon}
       </a>
