@@ -3,7 +3,7 @@ by: Henrique Salvador
 linkedin: https://www.linkedin.com/in/henriquesalvador42/
 position: Product Designer
 company: Nulogy
-image: https://media-exp1.licdn.com/dms/image/C4E03AQF9fCKbIF-TFw/profile-displayphoto-shrink_800_800/0/1581973415193?e=1634169600&v=beta&t=orSgWs6GxgCKgv3VtR2xOeWL0d6J6HNKa4E1XXZzXyQ
+image: /testimonials/hs.jpeg
 type: Testimonials
 ---
 
