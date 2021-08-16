@@ -11,17 +11,17 @@ import { Layout } from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="lg:flex">
+      <div className="2xl:flex">
         {/* Technical Skills */}
         <div className="max-w-md border-b-2 pb-5">
           <h2 className="h2 mt-5 mb-5">Technical Skills</h2>
           <Skills />
         </div>
-        <div className="max-w-md mt-5">
+        {/* <div className="max-w-md mt-5">
           <FunFact />
-        </div>
+        </div> */}
         {/* Past Clients */}
-        <div className="lg:ml-10 mt-5">
+        <div className="2xl:ml-10 mt-5">
           <PastClients />
         </div>
         {/* fun fact */}

@@ -50,7 +50,7 @@ export const PastClients = () => {
       </div>
 
       <h2 className="h2 mb-5">Testimonials</h2>
-      <div className="grid gap-4 grid-cols-1 place-items-stretch">
+      <div className="grid gap-4 grid-cols-1">
         {testimonialData.testimonialInfo.nodes.map((testimonial) => (
           <div className="max-w-md">
             <TestimonialCard testimonial={testimonial} />
