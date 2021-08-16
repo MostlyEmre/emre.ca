@@ -1,10 +1,12 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import TestimonialCard from "./TestimonialCard";
+import ClientCard from "./ClientCard";
+
 export const PastClients = () => {
   const testimonialData = useStaticQuery(graphql`
     query TestimonialsQuery {
-      allMarkdownRemark(filter: { frontmatter: { type: { eq: "Testimonials" } } }) {
+      testimonialInfo: allMarkdownRemark(filter: { frontmatter: { type: { eq: "Testimonials" } } }) {
         nodes {
           frontmatter {
             description
@@ -18,35 +20,41 @@ export const PastClients = () => {
           excerpt
         }
       }
+      clientInfo: markdownRemark(frontmatter: { type: { eq: "Past Clients" } }) {
+        frontmatter {
+          clients {
+            duration
+            location
+            name
+            position
+            time
+            type
+            url
+            image
+          }
+        }
+      }
     }
   `);
-  console.log(testimonialData.allMarkdownRemark.nodes);
-  // const pastClientData = useStaticQuery(graphql`
-  //   query PastClientsQuery {
-  //     allMarkdownRemark(filter: { frontmatter: { type: { eq: "Testimonials" } } }) {
-  //       nodes {
-  //         frontmatter {
-  //           description
-  //           by
-  //           linkedin
-  //           position
-  //           company
-  //           image
-  //         }
-  //         html
-  //       }
-  //     }
-  //   }
-  // `);
+  let finalClients = testimonialData.clientInfo.frontmatter.clients.filter((client) => client.name !== "Citibank");
 
   return (
-    <div className=" mb-10 2xl:w-3/12 xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-7/12">
-      <h2 className="h2 mb-5">Past Clients</h2>
+    <div className="mb-10">
+      <div className="mb-5 max-w-md">
+        <h2 className="h2 mb-5">Past Clients</h2>
+        {finalClients.map((client) => (
+          <ClientCard client={client} />
+        ))}
+      </div>
 
-      <h2 className="h2 mb-5">People Kinda Like Me</h2>
-      {testimonialData.allMarkdownRemark.nodes.map((testimonial) => (
-        <TestimonialCard testimonial={testimonial} />
-      ))}
+      <h2 className="h2 mb-5">Testimonials</h2>
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 place-items-stretch">
+        {testimonialData.testimonialInfo.nodes.map((testimonial) => (
+          <div className="max-w-md">
+            <TestimonialCard testimonial={testimonial} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

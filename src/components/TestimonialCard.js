@@ -7,7 +7,7 @@ const TestimonialCard = ({ testimonial }) => {
         <div className="p-4 bg-gray-100 border-b-4 border-pink-400">
           <p>{testimonial.excerpt}</p>
         </div>
-        <div className="flex items-center bg-gray-200 mb-4">
+        <div className="flex items-center bg-gray-200">
           <div className="inline-block mr-4">
             <a href={testimonial.frontmatter.linkedin} target="_blank" rel="noopener noreferrer">
               <img className="w-24 h-24 filter grayscale" src={testimonial.frontmatter.image} alt="" />

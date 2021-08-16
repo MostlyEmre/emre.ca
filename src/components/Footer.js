@@ -18,7 +18,7 @@ const Footer = () => {
   const { title, description, siteUrl } = data.site.siteMetadata;
 
   return (
-    <div className="mt-20 inline-block border-t-2 pt-5 mb-5">
+    <div className="max-w-md border-t-2 pt-5 mb-5">
       <p className="font-light text-gray-400 cursor-default">Designed and developed by me.</p>
       <Social />
     </div>

@@ -24,7 +24,7 @@ const Skills = () => {
 
   console.log(skillsDB);
   return (
-    <div className="flex-wrap justify-start">
+    <div className="">
       {skillsDB.map((skill) => (
         <SkillCard skill={skill} />
       ))}

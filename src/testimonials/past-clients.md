@@ -1,17 +1,8 @@
 ---
 clients:
   [
-    {
-      name: Seed Interactive,
-      position: UX Researcher,
-      duration: Feb. 2020 - May 2020,
-      type: Contract,
-      time: Part-time,
-      location: Toronto,
-      url: https://seedinteractive.co/,
-      logo: ../images/clients/seed.png,
-    },
-    { name: Cya Live, position: Product Designer, duration: Jan. 2020 - Feb. 2020, type: Internship, time: Part-time, location: Toronto, url: https://www.cya.live/, logo: ../images/clients/cya.png },
+    { name: Seed Interactive, position: UX Researcher, duration: Feb. 2020 - May 2020, type: Contract, time: Part-time, location: Toronto, url: https://seedinteractive.co/, image: /clients/seed.png },
+    { name: Cya Live, position: Product Designer, duration: Jan. 2020 - Feb. 2020, type: Internship, time: Part-time, location: Toronto, url: https://www.cya.live/, image: /clients/cya.png },
     {
       name: iVirtual Technologies Inc.,
       position: Product Designer,
@@ -20,7 +11,7 @@ clients:
       time: Part-time,
       location: Toronto,
       url: https://ivirtual.com/,
-      logo: ../images/clients/ivirtual.png,
+      image: /clients/ivirtual.png,
     },
     {
       name: RainGrid Inc.,
@@ -30,7 +21,7 @@ clients:
       time: Part-time,
       location: Toronto,
       url: https://www.raingrid.com/,
-      logo: ../images/clients/raingrid.png,
+      image: /clients/raingrid.png,
     },
     {
       name: MLD Solutions Inc.,
@@ -40,18 +31,9 @@ clients:
       time: Part-time,
       location: Toronto,
       url: https://www.mldsolutions.com/,
-      logo: ../images/clients/mld.png,
+      image: /clients/mld.png,
     },
-    {
-      name: George Brown College,
-      position: Researcher,
-      duration: Apr. 2018 - May 2020,
-      type: Contract,
-      time: Part-time,
-      location: Toronto,
-      url: https://www.gbcresearch.ca/,
-      logo: ../images/clients/gbc.png,
-    },
+    { name: George Brown College, position: Researcher, duration: Apr. 2018 - May 2020, type: Contract, time: Part-time, location: Toronto, url: https://www.gbcresearch.ca/, image: /clients/gbc.png },
     {
       name: Citibank,
       position: Anti Money Laundering Analyst,
@@ -60,7 +42,7 @@ clients:
       time: Full-Time,
       location: Istanbul,
       url: https://www.mldsolutions.com/,
-      logo: ../images/clients/seed.png,
+      image: /clients/seed.png,
     },
   ]
 type: Past Clients

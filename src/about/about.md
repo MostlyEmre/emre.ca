@@ -22,4 +22,6 @@ social:
     { name: Twitter, url: https://twitter.com/MostlyEmre, icon: SiTwitter, color: text-blue-400 },
     { name: Spotify, url: https://open.spotify.com/user/emre.la?si=436eddc77edf438e, icon: SiSpotify, color: text-green-400 },
   ]
+
+facts: ["Did you know that I was a product designer with 2 years of experience before I changed careers?"]
 ---

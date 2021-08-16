@@ -12,21 +12,24 @@ const IndexPage = () => {
       <title>Home Page</title>
 
       <Header />
+      <div className="lg:flex">
+        {/* Technical Skills */}
+        <div className="max-w-md">
+          <h2 className="h2 mb-5">Technical Skills</h2>
+          <Skills />
+        </div>
 
-      {/* Technical Skills */}
-      <div className=" mb-10 2xl:w-3/12 xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-7/12">
-        <h2 className="h2 mb-5">Technical Skills</h2>
-        <Skills />
-      </div>
-
-      {/* Past Clients */}
-      <div></div>
-      {/* fun fact */}
-      {/* <div className="w-6/12 2xl:w-3/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
+        {/* Past Clients */}
+        <div className="lg:ml-10">
+          <PastClients />
+        </div>
+        {/* fun fact */}
+        {/* <div className="w-6/12 2xl:w-3/12 bg-gray-200 cursor-default inline-block rounded-xl font-light text-lg p-4 ">
         <p>Did you know that I was a product designer before changing careers?</p>
       </div> */}
-      {/* References */}
-      <PastClients />
+        {/* References */}
+      </div>
+
       <Footer />
     </main>
   );
