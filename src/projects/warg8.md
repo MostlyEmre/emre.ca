@@ -8,6 +8,7 @@ duration: 1 Week
 type: Website
 solo: true
 wip: false
+featured: true
 live: https://war.emre.la
 source: https://github.com/EmreYYZ/warg8
 ---

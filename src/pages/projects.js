@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Layout } from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { v4 as uuidv4 } from "uuid";
@@ -7,12 +7,13 @@ import DevProjectCard from "../components/DevProjectCard";
 const Projects = ({ data }) => {
   // const { title, stack, slug } = data.allMarkdownRemark.nodes.frontmatter;
   // console.log(data);
+  const [projectFilter, setProjectFilter] = useState();
   console.log(data);
   const projects = data.allMarkdownRemark.nodes;
 
   return (
     <Layout>
-      <h1 className="h2 mb-5">Projects</h1>
+      <h1 className="h2 my-5">Projects</h1>
       <div className="">
         {projects.map((project) => (
           <DevProjectCard key={uuidv4()} project={project} />
@@ -38,6 +39,7 @@ export const query = graphql`
           type
           live
           source
+          featured
         }
       }
     }

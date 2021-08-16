@@ -9,5 +9,6 @@ solo: true
 type: Chrome Extension
 live: null
 wip: false
+featured: false
 source: https://github.com/EmreYYZ/Sylvester
 ---

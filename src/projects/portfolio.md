@@ -9,5 +9,6 @@ solo: true
 type: Website
 live: https://emre.la
 wip: true
+featured: false
 source: https://github.com/EmreYYZ/emre.la
 ---

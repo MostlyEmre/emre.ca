@@ -7,6 +7,7 @@ features: null
 duration: 2 Weeks
 solo: true
 wip: false
+featured: true
 type: Website
 live: https://hpa.emre.la
 source: https://github.com/EmreYYZ/HN-Paywall-Archiver
