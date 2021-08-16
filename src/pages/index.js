@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Skills from "../components/Skills";
 import Trakt from "../components/Trakt";
 import { PastClients } from "../components/PastClients";
+import FunFact from "../components/FunFact";
 // markup
 const IndexPage = () => {
   return (
@@ -14,11 +15,13 @@ const IndexPage = () => {
       <Header />
       <div className="lg:flex">
         {/* Technical Skills */}
-        <div className="max-w-md">
+        <div className="max-w-md border-b-2 pb-5">
           <h2 className="h2 mb-5">Technical Skills</h2>
           <Skills />
         </div>
-
+        <div className="max-w-md">
+          <FunFact />
+        </div>
         {/* Past Clients */}
         <div className="lg:ml-10">
           <PastClients />

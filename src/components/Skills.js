@@ -24,7 +24,7 @@ const Skills = () => {
 
   console.log(skillsDB);
   return (
-    <div className="">
+    <div>
       {skillsDB.map((skill) => (
         <SkillCard skill={skill} />
       ))}
