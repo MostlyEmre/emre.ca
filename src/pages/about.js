@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Trakt from "../components/Trakt";
+import { Layout } from "../components/Layout";
 const About = () => {
   const [imgURL, setImgURL] = useState([]);
 
@@ -8,10 +9,9 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      <p>About meee</p>
+    <Layout>
       <Trakt />
-    </div>
+    </Layout>
   );
 };
 

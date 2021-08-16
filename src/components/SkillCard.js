@@ -9,7 +9,7 @@ const SkillCard = ({ skill }) => {
   const icon = React.createElement(SimpleIcons[skill.icon]);
 
   return (
-    <motion.div className="inline-block mr-6 mb-6" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.9 }}>
+    <motion.div className="inline-block mr-4 mb-4" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.9 }}>
       <Link to={`/tech/${skill.slug}`}>
         <div className="flex sm:text-5xl justify-between items-center font-bold text-gray-900 text-xl">
           <span className={`hover:${skill.color} text-gray-400 animation`}>{icon}</span>

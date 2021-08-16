@@ -6,24 +6,22 @@ import Skills from "../components/Skills";
 import Trakt from "../components/Trakt";
 import { PastClients } from "../components/PastClients";
 import FunFact from "../components/FunFact";
+import { Layout } from "../components/Layout";
 // markup
 const IndexPage = () => {
   return (
-    <main className="w-11/12 md:ml-10 md:w-12/12 m-auto text-gray-900">
-      <title>Home Page</title>
-
-      <Header />
+    <Layout>
       <div className="lg:flex">
         {/* Technical Skills */}
         <div className="max-w-md border-b-2 pb-5">
-          <h2 className="h2 mb-5">Technical Skills</h2>
+          <h2 className="h2 mt-5 mb-5">Technical Skills</h2>
           <Skills />
         </div>
-        <div className="max-w-md">
+        <div className="max-w-md mt-5">
           <FunFact />
         </div>
         {/* Past Clients */}
-        <div className="lg:ml-10">
+        <div className="lg:ml-10 mt-5">
           <PastClients />
         </div>
         {/* fun fact */}
@@ -32,9 +30,7 @@ const IndexPage = () => {
       </div> */}
         {/* References */}
       </div>
-
-      <Footer />
-    </main>
+    </Layout>
   );
 };
 

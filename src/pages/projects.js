@@ -1,4 +1,5 @@
 import React from "react";
+import { Layout } from "../components/Layout";
 // import { graphql, Link } from "gatsby";
 // import { v4 as uuidv4 } from "uuid";
 import "../styles/global.css";
@@ -8,9 +9,9 @@ const Projects = () => {
   // const projects = data.allMarkdownRemark.nodes;
 
   return (
-    <div>
-      <p>projects page</p>
-    </div>
+    <Layout>
+      <h1>Projects</h1>
+    </Layout>
   );
 };
 

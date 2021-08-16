@@ -42,13 +42,15 @@ export const PastClients = () => {
     <div className="mb-10">
       <div className="mb-5 max-w-md">
         <h2 className="h2 mb-5">Past Clients</h2>
-        {finalClients.map((client) => (
-          <ClientCard client={client} />
-        ))}
+        <div className="grid grid-cols-3 gap-4">
+          {finalClients.map((client) => (
+            <ClientCard client={client} />
+          ))}
+        </div>
       </div>
 
       <h2 className="h2 mb-5">Testimonials</h2>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 place-items-stretch">
+      <div className="grid gap-4 grid-cols-1 place-items-stretch">
         {testimonialData.testimonialInfo.nodes.map((testimonial) => (
           <div className="max-w-md">
             <TestimonialCard testimonial={testimonial} />
