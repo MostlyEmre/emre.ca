@@ -1,5 +1,5 @@
 ---
-title: Sylvester
+title: 😾 Sylvester
 slug: sylvester
 stack: [HTML, CSS, JavaScript]
 description: A Chrome extension that automatically hides anxiety driving Twitter features.

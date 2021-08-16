@@ -6,8 +6,8 @@ description: A Chrome extension that automatically hides anxiety driving EksiSoz
 features: [Hides Favorite Count, Hides Karma Count, Hides Karma Badges, Hides All Eksi Seyler References, Hides Pena Videos]
 duration: 2 days
 solo: true
-type: Chrome Extension
-live: null
+type: Website
+live: https://emre.la
 wip: true
 source: https://github.com/EmreYYZ/emre.la
 ---
