@@ -9,6 +9,7 @@ const Navigation = () => {
     { page: "Blog", url: "/blog" },
     { page: "About", url: "/about" },
     { page: "Contact", url: "/contact" },
+    { page: "Resume", url: "/EmreAydinResume.pdf" },
   ];
 
   return (
