@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <div>
+    <div className="mb-5">
       <Navigation />
       <HeaderCard />
     </div>
