@@ -23,4 +23,19 @@
   .skill {
     @apply inline-block mr-6 mb-6 sm:mb-0 text-6xl sm:text-5xl cursor-pointer;
   }
+
+  .markdown h1 {
+    @apply text-4xl font-extrabold mb-5;
+  }
+  .markdown h2 {
+    @apply text-3xl font-bold mb-5;
+  }
+
+  .markdown h3 {
+    @apply text-2xl font-medium mb-5;
+  }
+
+  .markdown p {
+    @apply mb-5 text-justify;
+  }
 }

@@ -32,13 +32,13 @@ I love tech, all of my hobbies revolve around tech and the biggest one is contri
 
 Opinionated when it comes to Preservation of Information, Decentralization, and Open Access
 
-# Values
+## Values
 
-## Preservation of Information
+### Preservation of Information
 
 Preservation of data can prevent bad-faith narratives from influencing people. Currently, the biggest problem with preservation is retrieving it. Most of the information is still hanging around somewhere, we just don't know where. That is why it is important to catalogue the data well with necessary metadata.
 
-## What do I do?
+#### What do I do?
 
 Archiving culture in Turkey is basically non-existent. Little effort is shown by random people online with almost no information architecture. To overcome the preservation issue in Turkey, I started to collect the said disorganized data and reorganize and record them on better platforms. [archive.org/details/@emreca](archive.org/details/@emreca)
 
@@ -46,18 +46,18 @@ I catalogue, organize and archive Turkish magazines, zines and other media relea
 
 Archiving the past can inform the future about our mistakes, lifestyle and values. That would minimize politicians' rewrite of the past and misinform the public. It would also prevent revisionist reinvention of our history.
 
-## Decentralization
+### Decentralization
 
 The internet is not what it used to be, it is evolving for the worse. Thankfully projects like Toronto Mesh, Pirate Box (RIP) give me hope that not all is gone.
 
-### What do I do?
+#### What do I do?
 
 I have a special bond with Monero. Monero.cat is a DCA tool for the most privacy respecting cryptocurrncy since forever. It, sadly, uses Javascript because that's the only language I speak. However, I wrote the code as much privacy respecting as possible (no dependencies, no libraries, no databases, no servers, locally runnable)
 
-## Open Access to Information
+### Open Access to Information
 
 There are enough ways to monetize information without hiding it behind a paywall. We tend to choose the easisest and most destructive ways when it comes to creating solutions. I support projects like Sci-Hub
 
-### What do I do?
+#### What do I do?
 
 HN Paywall Archiver gets the latest HN link submissions behind a paywall, and puts them into one of the archiving services to remove its paywall. So that it is accessible to researchers and curious people who can't afford to shell out the dollars required to access to that specific information.
