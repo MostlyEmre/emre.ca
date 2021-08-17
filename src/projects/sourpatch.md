@@ -1,5 +1,5 @@
 ---
-title: 🍋 SourPatch
+title: SourPatch
 slug: sourpatch
 stack: [HTML, CSS, JavaScript]
 description: A Chrome extension that automatically hides anxiety driving "eksisozluk.com" features.

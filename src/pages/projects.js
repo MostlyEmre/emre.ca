@@ -14,7 +14,7 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <h1 className="h2 my-5">Projects</h1>
-      <div className="">
+      <div className="flex flex-grow flex-wrap">
         {projects.map((project) => (
           <DevProjectCard key={uuidv4()} project={project} />
         ))}

@@ -5,17 +5,15 @@ const DevProjectCard = ({ project }) => {
   const { title, slug, stack, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.9 }}
-      className={`${featured ? "border-8 border-yellow-400" : null} bg-gray-100 inline-block align-top border-gray-500 md:mr-4 hover:shadow-md max-w-sm mb-4`}
-    >
+    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.9 }} className="bg-gray-100 flex flex-col justify-between md:mr-4 hover:shadow-md max-w-sm mb-4">
       <div className="p-4 ">
         {/* Title */}
         <h3 className="h3 mb-2 pb-2 border-b-2">{title}</h3>
 
         {/* Meta Details */}
         <div className="flex flex-wrap py-2">
+          {featured ? <p className="meta-detail bg-green-300">🤩</p> : null}
+
           <p className="meta-detail">🪴 {type}</p>
           {wip ? <p className="meta-detail">🧘‍♂️ W.I.P</p> : null}
           <p className="meta-detail">⌛ {duration}</p>
@@ -48,7 +46,6 @@ const DevProjectCard = ({ project }) => {
       {/* Web Buttons */}
       {live ? (
         <div>
-          <div className="grid grid-cols-1">{featured ? <p className="py-4 px-6 text-center text-gray-900 bg-yellow-400 font-bold uppercase">Featured</p> : null}</div>
           <div className="grid grid-cols-2">
             <a href={live} className="animation py-4 px-6 text-center  text-gray-50 bg-purple-500 hover:bg-purple-700 font-bold uppercase" target="_blank" rel="noopener noreferrer">
               Live Site
@@ -60,7 +57,6 @@ const DevProjectCard = ({ project }) => {
         </div>
       ) : (
         <div className="grid grid-cols-1">
-          {featured ? <p className="py-4 px-6 text-center text-gray-900 bg-yellow-400 uppercase">Featured</p> : null}
           <a href={source} className="animation py-4 px-6 text-center text-gray-900 bg-gray-50 hover:bg-gray-200" target="_blank" rel="noopener noreferrer">
             <button className="font-bold uppercase">Source Code</button>
           </a>
