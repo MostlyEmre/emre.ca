@@ -10,7 +10,9 @@ const About = () => {
 
   return (
     <Layout>
-      <Trakt />
+      <h1 className="h2 mb-5">About me</h1>
+      {/* A photo maybe? */}
+      {/* <Trakt /> */}
     </Layout>
   );
 };
