@@ -15,6 +15,7 @@ const About = ({ data }) => {
       <h1 className="h2 mb-5">About me</h1>
 
       <div className="markdown max-w-md" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
+      <div className=" max-w-md" dangerouslySetInnerHTML={{ __html: data.markdownRemark.tableOfContents }}></div>
       {/* A photo maybe? */}
       {/* <Trakt /> */}
     </Layout>
@@ -26,6 +27,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { title: { eq: "about" } }) {
       id
       html
+      tableOfContents
     }
   }
 `;

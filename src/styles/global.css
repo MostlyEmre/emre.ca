@@ -35,6 +35,14 @@
     @apply text-2xl font-medium mb-5;
   }
 
+  .markdown h4 {
+    @apply text-xl font-medium mb-5;
+  }
+
+  .markdown a {
+    @apply font-medium underline text-pink-400;
+  }
+
   .markdown p {
     @apply mb-5 text-justify;
   }

@@ -26,11 +26,11 @@ social:
 facts: ["Did you know that I was a product designer with 2 years of experience before I changed careers?"]
 ---
 
-My name is Emre, (pronounced like "Am-rae") I'm a product designer with 2 years of experience turned **front-end developer**. I was born in the capital city of Turkey a concrete jungle called Ankara. However, I've been living in Toronto, ON Canada for the last 5 years. In fact, I just passed my citizenship test!
+I'm a product designer with 2 years of experience turned **front-end developer**. I was born in the capital city of Turkey; a concrete jungle called Ankara. However, I've been living in Toronto, ON Canada for the last 5 years. In fact, I just passed my citizenship test!
 
 I love tech, all of my hobbies revolve around tech and the biggest one is contributing to digital archiving efforts to preserve culture and history.
 
-Opinionated when it comes to Preservation of Information, Decentralization, and Open Access
+Opinionated when it comes to preservation of information, decentralization, and freedom of knowledge.
 
 ## Values
 
@@ -40,7 +40,7 @@ Preservation of data can prevent bad-faith narratives from influencing people. C
 
 #### What do I do?
 
-Archiving culture in Turkey is basically non-existent. Little effort is shown by random people online with almost no information architecture. To overcome the preservation issue in Turkey, I started to collect the said disorganized data and reorganize and record them on better platforms. [archive.org/details/@emreca](archive.org/details/@emreca)
+Archiving culture in Turkey is basically non-existent. Little effort is shown by random people online with almost no information architecture. To overcome the preservation issue in Turkey, I started to collect the said disorganized data and reorganize and record them on better platforms. [archive.org/details/@emreca](https://archive.org/details/@emreca).
 
 I catalogue, organize and archive Turkish magazines, zines and other media released up to late 1990s.
 
