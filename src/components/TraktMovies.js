@@ -59,31 +59,33 @@ const TraktMovies = ({ config, tmdbAPI }) => {
   }
   return (
     <div>
-      <h3 className="text-2xl mt-10 mb-5 font-bold">Recently watched movies</h3>
-      {movies.map((movie) => (
-        <div key={uuidv4()} className="my-2 inline-block bg-gray-200  text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-96">
-          <div className="mt-2 mb-1 aspect-w-16 aspect-h-9">
-            <img src={movie.thumb} className="object-cover border-2 border-gray-100 shadow-md" alt={`${movie.movie.title} Thumbnail`} />
+      <h3 className="text-2xl mt-5 mb-5 font-bold">Recently watched movies</h3>
+      <div className="flex items-stretch flex-wrap">
+        {movies.map((movie) => (
+          <div key={uuidv4()} className="my-2 bg-gray-200  text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-72">
+            <div className="mt-2 mb-1 aspect-w-16 aspect-h-9">
+              <img src={movie.thumb} className="object-cover border-2 border-gray-100 shadow-md" alt={`${movie.movie.title} Thumbnail`} />
+            </div>
+            <div className="p-1">
+              <h3 className="text-xl font-normal ">{movie.movie.title}</h3>
+            </div>
+            <p className="text-xs font-bold">
+              <motion.a
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-gray-800 px-2 py-1 mr-2 bg-yellow-400"
+                href={`https://www.imdb.com/title/${movie.movie.ids.imdb}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                IMDb
+                {/* <p>Trakt: {movie.movie.ids.trakt}</p> */}
+              </motion.a>
+              <span className="cursor-default bg-gray-50 inline-block text-gray-900 px-2 py-1 mr-2">{movie.movie.year}</span>
+            </p>
           </div>
-          <div className="p-1">
-            <h3 className="text-xl font-normal ">{movie.movie.title}</h3>
-          </div>
-          <p className="text-xs font-bold">
-            <motion.a
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.9 }}
-              className="text-gray-800 px-2 py-1 mr-2 bg-yellow-400"
-              href={`https://www.imdb.com/title/${movie.movie.ids.imdb}/`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              IMDb
-              {/* <p>Trakt: {movie.movie.ids.trakt}</p> */}
-            </motion.a>
-            <span className="cursor-default bg-gray-50 inline-block text-gray-900 px-2 py-1 mr-2">{movie.movie.year}</span>
-          </p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

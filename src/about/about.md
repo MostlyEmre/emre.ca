@@ -26,13 +26,15 @@ social:
 facts: ["Did you know that I was a product designer with 2 years of experience before I changed careers?"]
 ---
 
+# About me
+
 I'm a product designer with 2 years of experience turned **front-end developer**. I was born in the capital city of Turkey; a concrete jungle called Ankara. However, I've been living in Toronto, ON Canada for the last 5 years. In fact, I just passed my citizenship test!
 
 I love tech, all of my hobbies revolve around tech and the biggest one is contributing to digital archiving efforts to preserve culture and history.
 
 Opinionated when it comes to preservation of information, decentralization, and freedom of knowledge.
 
-## Values
+<!-- ## Values
 
 ### Preservation of Information
 
@@ -60,4 +62,4 @@ There are enough ways to monetize information without hiding it behind a paywall
 
 #### What do I do?
 
-HN Paywall Archiver gets the latest HN link submissions behind a paywall, and puts them into one of the archiving services to remove its paywall. So that it is accessible to researchers and curious people who can't afford to shell out the dollars required to access to that specific information.
+HN Paywall Archiver gets the latest HN link submissions behind a paywall, and puts them into one of the archiving services to remove its paywall. So that it is accessible to researchers and curious people who can't afford to shell out the dollars required to access to that specific information. -->

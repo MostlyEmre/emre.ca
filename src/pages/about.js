@@ -12,12 +12,15 @@ const About = ({ data }) => {
 
   return (
     <Layout>
-      <h1 className="h2 mb-5">About me</h1>
+      <div className="">
+        <div className="markdown max-w-md" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
 
-      <div className="markdown max-w-md" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
-      <div className=" max-w-md" dangerouslySetInnerHTML={{ __html: data.markdownRemark.tableOfContents }}></div>
-      {/* A photo maybe? */}
-      {/* <Trakt /> */}
+        {/* <div>
+          <div className="toc max-w-sm" dangerouslySetInnerHTML={{ __html: data.markdownRemark.tableOfContents }}></div>
+        </div> */}
+        {/* A photo maybe? */}
+        <Trakt />
+      </div>
     </Layout>
   );
 };

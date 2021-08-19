@@ -61,34 +61,36 @@ const TraktShows = ({ config, tmdbAPI }) => {
 
   return (
     <div>
-      <h3 className="text-2xl mt-10 mb-5 font-bold">Recently watched episodes</h3>
-      {shows.map((show) => (
-        <div key={uuidv4()} className="my-2 inline-block  bg-gray-200 text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-96">
-          <div className="mt-2 mb-1 aspect-w-16 aspect-h-9">
-            <img src={show.thumb} className="object-cover border-2 border-gray-100 shadow-md" alt={`${show.show.title}: ${show.episode.title} Thumbnail`} />
-          </div>
-          <div className="p-1">
-            <p className="text-sm font-light">{show.episode.title}</p>
+      <h3 className="text-2xl mt-5 mb-5 font-bold">Recently watched episodes</h3>
+      <div className="flex items-stretch flex-wrap">
+        {shows.map((show) => (
+          <div key={uuidv4()} className="my-2 bg-gray-200  flex flex-col justify-between text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-72">
+            <div className="mt-2 mb-1 aspect-w-16 aspect-h-9">
+              <img src={show.thumb} className="object-cover border-2 border-gray-100 shadow-md" alt={`${show.show.title}: ${show.episode.title} Thumbnail`} />
+            </div>
+            <div className="">
+              <p className="text-sm font-light">{show.episode.title}</p>
 
-            <p className="text-xl font-normal">{show.show.title}</p>
+              <p className="text-xl mb-2 font-normal">{show.show.title}</p>
+            </div>
+            <p className="text-xs font-bold">
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-gray-800 inline-block px-2 py-1 mr-2 bg-yellow-400"
+                href={`https://www.imdb.com/title/${show.episode.ids.imdb}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                IMDb
+                {/* <p>Trakt: {show.episode.ids.trakt}</p> */}
+              </motion.a>
+              <span className="cursor-default bg-gray-50 text-gray-900 px-2 py-1 mr-2">Season {show.episode.season}</span>
+              {/* <span className="cursor-default bg-gray-50 rounded-xl border-2 shadow text-gray-900 px-2 py-1">Episode {show.episode.number}</span> */}
+            </p>
           </div>
-          <p className="text-xs font-bold">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-              className="text-gray-800 inline-block px-2 py-1 mr-2 bg-yellow-400"
-              href={`https://www.imdb.com/title/${show.episode.ids.imdb}/`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              IMDb
-              {/* <p>Trakt: {show.episode.ids.trakt}</p> */}
-            </motion.a>
-            <span className="cursor-default bg-gray-50 text-gray-900 px-2 py-1 mr-2">Season {show.episode.season}</span>
-            {/* <span className="cursor-default bg-gray-50 rounded-xl border-2 shadow text-gray-900 px-2 py-1">Episode {show.episode.number}</span> */}
-          </p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

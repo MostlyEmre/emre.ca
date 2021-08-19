@@ -25,7 +25,7 @@
   }
 
   .markdown h1 {
-    @apply text-4xl font-extrabold mb-5;
+    @apply text-4xl font-bold mb-5;
   }
   .markdown h2 {
     @apply text-3xl font-bold mb-5;
@@ -45,5 +45,12 @@
 
   .markdown p {
     @apply mb-5 text-justify;
+  }
+  .toc {
+    @apply bg-gray-900 hidden sm:ml-6 sm:inline-block py-4 px-5 mb-5;
+  }
+
+  .toc li {
+    @apply ml-1 my-1 text-sm text-gray-400 font-light hover:text-gray-50;
   }
 }
