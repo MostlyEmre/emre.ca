@@ -13,7 +13,7 @@ const About = ({ data }) => {
   return (
     <Layout>
       <div className="">
-        <div className="markdown max-w-md" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
+        <div className="markdown max-w-xl" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
 
         {/* <div>
           <div className="toc max-w-sm" dangerouslySetInnerHTML={{ __html: data.markdownRemark.tableOfContents }}></div>

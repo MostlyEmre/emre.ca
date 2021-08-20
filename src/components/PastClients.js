@@ -39,10 +39,10 @@ export const PastClients = () => {
   let finalClients = testimonialData.clientInfo.frontmatter.clients.filter((client) => client.name !== "Citibank");
 
   return (
-    <div className="mb-10">
-      <div className="mb-5 max-w-md">
+    <div className="mb-10 max-w-4xl">
+      <div className="mb-5">
         <h2 className="h2 mb-5">Past Clients</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-1 lg:gap-2">
           {finalClients.map((client) => (
             <ClientCard client={client} />
           ))}
@@ -50,7 +50,7 @@ export const PastClients = () => {
       </div>
 
       <h2 className="h2 mb-5">Testimonials</h2>
-      <div className="grid gap-4 grid-cols-1">
+      <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
         {testimonialData.testimonialInfo.nodes.map((testimonial) => (
           <div className="max-w-md">
             <TestimonialCard testimonial={testimonial} />

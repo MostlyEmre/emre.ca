@@ -11,9 +11,9 @@ const SkillCard = ({ skill }) => {
   return (
     <motion.div className="inline-block mr-4 mb-4" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.9 }}>
       <Link to={`/tech/${skill.slug}`}>
-        <div className="flex sm:text-5xl justify-between items-center font-bold text-gray-900 text-xl">
-          <span className={`hover:${skill.color} text-gray-400 animation`}>{icon}</span>
-          <span className="sm:hidden ml-2 text-base">{skill.name}</span>
+        <div className={`animation hover:${skill.color} flex justify-between items-center font-bold bg-gray-100 py-2 px-4 text-gray-900 text-xl`}>
+          {/* <span className={`hover:${skill.color} text-gray-400 animation`}>{icon}</span> */}
+          <span className={`ml-2 font-medium`}>{skill.name}</span>
         </div>
       </Link>
     </motion.div>
