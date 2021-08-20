@@ -6,10 +6,8 @@ const Navigation = () => {
   const menuItems = [
     { page: "Home", url: "/" },
     { page: "Projects", url: "/projects" },
-    { page: "Blog", url: "/blog" },
     { page: "About", url: "/about" },
     { page: "Contact", url: "/contact" },
-    { page: "Resume", url: "/EmreAydinResume.pdf" },
   ];
 
   return (
@@ -22,6 +20,11 @@ const Navigation = () => {
             </Link>
           </div>
         ))}
+        <div className="animation inline-block mr-4 mt-5 text-gray-500 hover:text-gray-900 text-lg" key={uuidv4()}>
+          <a href={`EmreAydinResume.pdf`} target="_blank" rel="noopener noreferrer">
+            <li>Resume</li>
+          </a>
+        </div>
       </ul>
     </div>
   );
