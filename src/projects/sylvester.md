@@ -3,10 +3,10 @@ title: Sylvester
 slug: sylvester
 stack: [HTML, CSS, JavaScript]
 description: A Chrome extension that automatically hides anxiety driving Twitter features.
-features: [Hides Trends, Hides Like Count, Hides Retweet Count, Hides Follower Count, Hides Explore Menu]
+features: [No Trends, No Like Count, No Retweet Count, No Follower Count, No Explore Menu]
 duration: 2 days
 solo: true
-type: Chrome Extension
+type: Extension
 live: null
 wip: false
 featured: false

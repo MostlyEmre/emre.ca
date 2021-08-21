@@ -3,10 +3,10 @@ title: SourPatch
 slug: sourpatch
 stack: [HTML, CSS, JavaScript]
 description: A Chrome extension that automatically hides anxiety driving "eksisozluk.com" features.
-features: [Hides Favorite Count, Hides Karma Count, Hides Karma Badges, Hides All Eksi Seyler References, Hides Pena Videos]
+features: [No Favorite Count, No Karma Count, No Karma Badges, No "Eksi Seyler" References, No "Pena" Videos]
 duration: 2 days
 solo: true
-type: Chrome Extension
+type: Extension
 live: null
 wip: false
 featured: false
