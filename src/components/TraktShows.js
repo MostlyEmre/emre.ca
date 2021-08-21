@@ -61,7 +61,7 @@ const TraktShows = ({ config, tmdbAPI }) => {
 
   return (
     <div>
-      <h3 className="text-2xl mt-5 mb-5 font-bold">Recently watched episodes</h3>
+      <h3 className="text-2xl mt-5 mb-5 font-bold">Recently watched TV</h3>
       <div className="flex items-stretch flex-wrap">
         {shows.map((show) => (
           <div key={uuidv4()} className="my-2 bg-gray-200  flex flex-col justify-between text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-72">
