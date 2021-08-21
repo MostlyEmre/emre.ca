@@ -5,11 +5,12 @@ const HeaderCard = () => {
   return (
     <div className="max-w-md border-b-2 pb-3">
       <div>
-        <p className="font-bold text-4xl sm:text-5xl mt-4 mb-2 sm:mt-4 sm:mb-2 cursor-default">Hello, I'm Emre!</p>
-        <div className="flex cursor-default">
-          <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">📣</div>
-          <p className="font-normal text-xl sm:text-2xl my-2 inline-block text-pink-400">/Am + Rae/</p>
-        </div>
+        <p className="font-bold text-4xl sm:text-5xl mt-4 mb-2 sm:mt-4 sm:mb-2 cursor-default">
+          Hello, I'm Emre!
+          <sup className="cursor-default">
+            <span className="font-normal text-sm sm:text-md ml-2 my-2 text-pink-400">/Am + Rae/</span>
+          </sup>
+        </p>
       </div>
       {/* <p className="font-medium text-sm text-pink-400">
         <BiUserVoice className="inline-block text-2xl text-indigo-500 mr-1" />

@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 @layer components {
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.3em;
+    vertical-align: super;
+  }
+  sub {
+    bottom: -0.25em;
+    vertical-align: sub;
+  }
+
   .animation {
     @apply transition duration-300 ease-in-out;
   }
