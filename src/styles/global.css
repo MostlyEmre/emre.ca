@@ -60,7 +60,7 @@
   }
 
   .markdown p {
-    @apply mb-5 text-lg text-justify font-light;
+    @apply mb-5 text-lg font-light;
   }
   .markdown strong {
     @apply font-medium;

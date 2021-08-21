@@ -1,11 +1,11 @@
 import React from "react";
-
+import ReadMore from "./ReadMore";
 const TestimonialCard = ({ testimonial }) => {
   return (
     <div>
       <div>
         <div className="p-4 bg-gray-100 border-b-4 border-pink-400">
-          <p>{testimonial.excerpt}</p>
+          <ReadMore excerpt={testimonial.excerpt} full={testimonial} />
         </div>
         <div className="flex items-center bg-gray-200">
           <div className="inline-block mr-4">

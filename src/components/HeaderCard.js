@@ -3,7 +3,7 @@ import { BiUserVoice } from "react-icons/bi";
 
 const HeaderCard = () => {
   return (
-    <div className="max-w-md border-b-2 pb-3">
+    <div className="max-w-md ">
       <div>
         <p className="font-bold text-4xl sm:text-5xl mt-4 mb-2 sm:mt-4 sm:mb-2 cursor-default">
           Hello, I'm Emre!
@@ -12,10 +12,6 @@ const HeaderCard = () => {
           </sup>
         </p>
       </div>
-      {/* <p className="font-medium text-sm text-pink-400">
-        <BiUserVoice className="inline-block text-2xl text-indigo-500 mr-1" />
-        /Eh-M + R-Eh/
-      </p> */}
       <div className="flex cursor-default">
         <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">🧑🏼‍🚀</div>
         <div>
