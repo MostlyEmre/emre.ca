@@ -7,7 +7,7 @@ const Header = () => {
     <div className="mb-5">
       <Navigation />
       <HeaderCard />
-      <div className="pb-5 max-w-md border-b-2"></div>
+      <div className="pb-2 max-w-md border-b-2"></div>
     </div>
   );
 };
