@@ -13,7 +13,7 @@ const IndexPage = () => {
     <Layout>
       <div className="">
         {/* Technical Skills */}
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <Skills />
         </div>
         {/* <div className="max-w-md mt-5">

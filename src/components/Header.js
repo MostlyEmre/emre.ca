@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderCard from "./HeaderCard";
 import Navigation from "./Navigation";
-import Skills from "./Skills";
 
 const Header = () => {
   return (
