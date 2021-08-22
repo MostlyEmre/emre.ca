@@ -72,4 +72,7 @@
   .toc li {
     @apply ml-1 my-1 text-sm text-gray-400 font-light hover:text-gray-50;
   }
+  .input-field {
+    @apply mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0;
+  }
 }
