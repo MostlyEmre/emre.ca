@@ -1,7 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import { SiGithub, SiLinkedin, SiInstagram, SiMedium, SiTwitter, SiSpotify } from "react-icons/si";
 import SocialCard from "./SocialCard";
 
 const Social = () => {

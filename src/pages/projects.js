@@ -1,19 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Layout } from "../components/Layout";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { v4 as uuidv4 } from "uuid";
 import "../styles/global.css";
 import DevProjectCard from "../components/DevProjectCard";
-import ProjectFilter from "../components/ProjectFilter";
 
 const Projects = ({ data }) => {
   // const { title, stack, slug } = data.allMarkdownRemark.nodes.frontmatter;
   // console.log(data);
-  const [projectFilter, setProjectFilter] = useState();
-  console.log(data);
   const projects = data.allMarkdownRemark.nodes;
   const featured = projects.filter((project) => project.frontmatter.featured);
-  console.log(featured);
   return (
     <Layout>
       {/* Featured Projects */}

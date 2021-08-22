@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React, { useState } from "react";
 
 const ReadMore = ({ excerpt, full }) => {

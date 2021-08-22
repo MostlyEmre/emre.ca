@@ -1,8 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import { motion } from "framer-motion";
 const DevProjectCard = ({ project }) => {
-  const { title, slug, stack, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
+  const { title, stack, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
 
   return (
     <div className="bg-gray-100 border-4 border-gray-300 flex flex-col justify-between md:mr-8 max-w-sm mb-8">

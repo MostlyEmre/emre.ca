@@ -19,7 +19,7 @@ const TraktMovies = ({ config, tmdbAPI }) => {
       .then((data) => {
         let watchedMovies = data.slice(0, 3);
 
-        watchedMovies.map((movie) => {
+        watchedMovies.forEach((movie) => {
           let tmdbURL = `https://api.themoviedb.org/3/movie/${movie.movie.ids.tmdb}/images?api_key=${tmdbAPI}`;
           fetch(tmdbURL)
             .then((response) => response.json())

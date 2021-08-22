@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { SiTrakt, SiImdb } from "react-icons/si";
+import { SiTrakt } from "react-icons/si";
 import { motion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
@@ -19,7 +19,7 @@ const TraktShows = ({ config, tmdbAPI }) => {
       .then((data) => {
         let watchedShows = data.slice(0, 3);
 
-        watchedShows.map((show) => {
+        watchedShows.forEach((show) => {
           let tmdbURL = `https://api.themoviedb.org/3/tv/${show.show.ids.tmdb}/season/${show.episode.season}/episode/${show.episode.number}/images?api_key=${tmdbAPI}`;
           fetch(tmdbURL)
             .then((response) => response.json())

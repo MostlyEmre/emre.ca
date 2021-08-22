@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Trakt from "../components/Trakt";
 import { Layout } from "../components/Layout";
 import { graphql } from "gatsby";
 
 const About = ({ data }) => {
-  const [imgURL, setImgURL] = useState([]);
-  console.log(data);
-  useEffect(() => {
-    setImgURL(["https://i.imgur.com/WxvQn8k.png", "https://i.imgur.com/8nP4SSY.jpeg"]);
-  }, []);
-
   return (
     <Layout>
       <div className="">

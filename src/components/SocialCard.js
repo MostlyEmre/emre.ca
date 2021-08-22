@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React from "react";
 import * as SimpleIcons from "react-icons/si";
 import { motion } from "framer-motion";

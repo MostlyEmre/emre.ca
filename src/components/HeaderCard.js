@@ -1,5 +1,4 @@
 import React from "react";
-import { BiUserVoice } from "react-icons/bi";
 
 const HeaderCard = () => {
   return (
