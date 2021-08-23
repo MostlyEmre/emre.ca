@@ -19,13 +19,15 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Netlify Form code
-    console.log(e.target.value);
+    console.log(e.target);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": e.target.value,
-        ...name,
+        name: name,
+        email: email,
+        message: message,
       }),
     })
       // .then(() => navigate("/thank-you/"))
@@ -49,7 +51,7 @@ const Contact = () => {
         ) : null}
 
         {/* Form */}
-        <form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bot-field">
+        <form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
           {/* Netlify form-name */}
           <input type="hidden" name="form-name" value="contact" />
           {/* Honeypot */}

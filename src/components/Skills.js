@@ -22,7 +22,6 @@ const Skills = () => {
 
   const skillsDB = data.allMarkdownRemark.nodes[0].frontmatter.skills;
 
-  console.log(skillsDB);
   return (
     <div>
       <h2 className="h2 mt-5 mb-5">Technical Skills</h2>
