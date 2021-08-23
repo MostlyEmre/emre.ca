@@ -19,12 +19,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Netlify Form code
-    console.log(e.target);
+    console.log(e.target.name);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": e.target.value,
+        "form-name": "contact",
         name: name,
         email: email,
         message: message,
@@ -80,7 +80,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              minlength="25"
+              minLength="25"
               name="message"
               cols="30"
               rows="5"

@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { v4 as uuidv4 } from "uuid";
 
 import SocialCard from "./SocialCard";
 
@@ -20,11 +21,10 @@ const Social = () => {
   `);
 
   const socialItems = data.markdownRemark.frontmatter.social;
-  console.log(socialItems);
   return (
     <div className="mt-4">
       {socialItems.map((social) => (
-        <SocialCard social={social} />
+        <SocialCard key={uuidv4()} social={social} />
       ))}
     </div>
   );
