@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Layout } from "../components/Layout";
 import { motion } from "framer-motion";
+import { navigate } from "gatsby";
 
 const Contact = () => {
   const [isSent, setIsSent] = useState(false);
@@ -8,8 +9,28 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // Netlify Form related function
+  function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Netlify Form code
+    console.log(e.target.value);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": e.target.value,
+        ...name,
+      }),
+    })
+      // .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+
     setName("");
     setEmail("");
     setMessage("");
@@ -28,17 +49,25 @@ const Contact = () => {
         ) : null}
 
         {/* Form */}
-        <form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true">
+        <form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bot-field">
+          {/* Netlify form-name */}
+          <input type="hidden" name="form-name" value="contact" />
+          {/* Honeypot */}
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           {/* Name */}
           <label className="block my-4">
             <span className="block mb-2">Name</span>
-            <input className="block input-field" value={name} required type="text" name="name" id="" placeholder="Marty McFly" onChange={(e) => setName(e.target.value)} />
+            <input className="block input-field" value={name} required type="text" name="name" placeholder="Marty McFly" onChange={(e) => setName(e.target.value)} />
           </label>
 
           {/* Email */}
           <label className="block my-4">
             <span className="block mb-2">Email</span>
-            <input className="block input-field" required value={email} type="email" name="email" id="" placeholder="great@scott.com" onChange={(e) => setEmail(e.target.value)} />
+            <input className="block input-field" required value={email} type="email" name="email" placeholder="great@scott.com" onChange={(e) => setEmail(e.target.value)} />
           </label>
 
           {/* Message */}
@@ -50,8 +79,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
               required
               minlength="25"
-              name=""
-              id=""
+              name="message"
               cols="30"
               rows="5"
               placeholder="Roads? Where we're going, we don't need roads."
