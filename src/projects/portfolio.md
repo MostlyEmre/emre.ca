@@ -8,7 +8,7 @@ duration: 2 Weeks
 solo: true
 type: Website
 live: https://emre.la
-wip: true
+wip: false
 featured: false
 source: https://github.com/EmreYYZ/emre.la
 ---
