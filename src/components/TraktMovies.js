@@ -44,7 +44,7 @@ const TraktMovies = ({ config, tmdbAPI }) => {
 
   if (moviesLoading) {
     return (
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 max-w-xl text-lg text-center mb-4">
         <p className="inline-flex items-center cursor-default my-10">
           Loading the latest movies I've watched from <SiTrakt className="inline-block text-red-500 text-xl mx-1" />
           <span className="font-bold">

@@ -45,8 +45,8 @@ const TraktShows = ({ config, tmdbAPI }) => {
   // useEffect get shows
   if (showsLoading) {
     return (
-      <div>
-        <p className="inline-flex items-center cursor-default my-5">
+      <div className="bg-gray-100 max-w-xl text-lg text-center mb-4">
+        <p className="inline-flex items-center cursor-default my-10">
           Loading the latest TV episodes I've watched from <SiTrakt className="inline-block text-red-500 text-xl mx-1" />
           <span className="font-bold">
             <a href="https://trakt.tv/users/emrecaydin" className="cursor-pointer" target="_blank" rel="noopener noreferrer">
