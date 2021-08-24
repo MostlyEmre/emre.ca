@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { v4 as uuidv4 } from "uuid";
 import "../styles/global.css";
 import DevProjectCard from "../components/DevProjectCard";
-
+import { Helmet } from "react-helmet";
 const Projects = ({ data }) => {
   // const { title, stack, slug } = data.allMarkdownRemark.nodes.frontmatter;
   // console.log(data);
@@ -13,6 +13,9 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       {/* Featured Projects */}
+      <Helmet>
+        <title>🎨 Projects | Emre's Space</title>
+      </Helmet>
       <div>
         <h1 className="h2 my-5">Featured Projects</h1>
         <div className="flex flex-grow flex-wrap">

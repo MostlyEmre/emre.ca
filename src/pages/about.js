@@ -2,10 +2,14 @@ import React from "react";
 import Trakt from "../components/Trakt";
 import { Layout } from "../components/Layout";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 
 const About = ({ data }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>👨🏻 About | Emre's Space</title>
+      </Helmet>
       <div className="">
         <div className="markdown max-w-xl" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
 

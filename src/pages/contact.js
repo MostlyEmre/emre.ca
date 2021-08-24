@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Layout } from "../components/Layout";
 import { motion } from "framer-motion";
-import { navigate } from "gatsby";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [isSent, setIsSent] = useState(false);
@@ -18,8 +18,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     // Netlify Form code
-    console.log(e.target.name);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -41,6 +41,9 @@ const Contact = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>☎️ Contact | Emre's Space</title>
+      </Helmet>
       <div className="max-w-md text-lg">
         <h1 className="h2 mb-5">Let's Collaborate!</h1>
         <p className="">Feel free to contact me about your next project or something you found interesting on my portfolio or about anything really.</p>
