@@ -13,8 +13,8 @@ const HeaderCard = () => {
         </p>
       </div>
       <Social />
-
-      <div className="flex cursor-default">
+      <div className="border-b-2 pb-3"></div>
+      <div className="flex mt-2 cursor-default">
         <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">🧑🏼‍🚀</div>
         <div>
           <p className="font-normal text-xl sm:text-2xl mt-2 mb-0 inline-block text-gray-900">Frontend Developer</p>
