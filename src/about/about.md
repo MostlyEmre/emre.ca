@@ -4,11 +4,13 @@ skills:
   [
     { name: HTML, slug: html, icon: SiHtml5, color: red-300 },
     { name: CSS, slug: css, icon: SiCss3, color: blue-300 },
+    { name: SASS/SCSS, slug: sass, icon: SiSass, color: pink-300 },
+    { name: Tailwind CSS, slug: tailwind-css, icon: SiTailwindcss, color: blue-300 },
     { name: JavaScript, slug: javascript, icon: SiJavascript, color: yellow-300 },
     { name: TypeScript, slug: typescript, icon: SiTypescript, color: blue-300 },
     { name: React JS, slug: react, icon: SiReact, color: purple-300 },
     { name: Gatsby JS, slug: gatsby, icon: SiGatsby, color: pink-300 },
-    { name: Tailwind CSS, slug: tailwind-css, icon: SiTailwindcss, color: blue-300 },
+    { name: GraphQL, slug: graphql, icon: SiGraphql, color: purple-300 },
     { name: Firebase, slug: firebase, icon: SiFirebase, color: yellow-300 },
     { name: Framer Motion, slug: framer-motion, icon: SiFramer, color: purple-300 },
   ]

@@ -1,4 +1,5 @@
 import React from "react";
+import Social from "./Social";
 
 const HeaderCard = () => {
   return (
@@ -11,6 +12,8 @@ const HeaderCard = () => {
           </sup>
         </p>
       </div>
+      <Social />
+
       <div className="flex cursor-default">
         <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">🧑🏼‍🚀</div>
         <div>
