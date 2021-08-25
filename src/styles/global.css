@@ -31,7 +31,7 @@
     @apply text-4xl font-bold;
   }
   .h3 {
-    @apply text-2xl font-bold;
+    @apply text-2xl font-medium;
   }
   .meta-detail {
     @apply mr-2 mb-2 text-gray-600 text-sm bg-gray-50 py-1 px-2;

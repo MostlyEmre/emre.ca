@@ -29,11 +29,11 @@ const DevProjectCard = ({ project }) => {
         {/* Features */}
         {features !== null ? (
           <div className="mt-2 pb-2 px-4 border-b-4 border-gray-300">
-            <h3 className="font-medium text-lg mb-2">Features</h3>
+            <h3 className="font-medium text-md mb-2">Features</h3>
             <div>
               <ul className="flex flex-wrap">
                 {features.map((feature) => (
-                  <li className="bg-gray-300 text-center flex-grow inline-block text-base mr-2 mb-2 px-3 py-2" key={uuidv4()}>
+                  <li className="bg-gray-300 text-center flex-grow inline-block text-sm mr-2 mb-2 px-2 py-1" key={uuidv4()}>
                     {feature}
                   </li>
                 ))}
@@ -44,8 +44,8 @@ const DevProjectCard = ({ project }) => {
         {/* Stack */}
 
         <div className="pb-2 pt-2 px-4">
-          <h3 className="font-medium text-lg mb-2">Stack</h3>
-          <ul className="flex  flex-wrap cursor-default">
+          <h3 className="font-medium text-md mb-2">Stack</h3>
+          <ul className="flex flex-wrap cursor-default">
             {stack
               .sort(function (a, b) {
                 if (a < b) {
@@ -57,7 +57,7 @@ const DevProjectCard = ({ project }) => {
                 return 0;
               })
               .map((tech) => (
-                <li className="mr-2 flex-grow text-center  mb-2 text-gray-50 bg-gray-500 px-3 py-2 text-base" key={uuidv4()}>
+                <li className="mr-2 flex-grow text-center mb-2 text-gray-50 bg-gray-500 px-2 py-1 text-sm" key={uuidv4()}>
                   {tech}
                 </li>
               ))}
