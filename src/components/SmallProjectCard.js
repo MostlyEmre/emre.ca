@@ -11,7 +11,7 @@ export const SmallProjectCard = ({ projectData }) => {
         {/* PROJECT STACK */}
         <ul className="flex flex-wrap mb-2 cursor-default">
           {projectData.stack.map((tech) => (
-            <li className="flex-grow bg-gray-300 text-sm text-gray-800 mr-1 mb-1 py-1 px-2 text-center" key={uuidv4()}>
+            <li className="flex-grow bg-gray-300 text-sm text-gray-800 mr-2 mb-2 py-1 px-2 text-center" key={uuidv4()}>
               {tech}
             </li>
           ))}
