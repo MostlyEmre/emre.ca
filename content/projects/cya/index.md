@@ -2,8 +2,8 @@
 title: Cya Live Internship
 slug: cya-live
 description: CYA Live is a website where users can watch movies with celebrities and friends.
-hero: [cya-1.png]
-thumbnail: [cya-0.png]
+hero: "./cya-1.png"
+thumbnail: "./cya-0.png"
 category: Product Design
 subcategory: Internship
 roles: Product Designer
@@ -31,18 +31,18 @@ After I felt comfortable in my knowledge of the vision and the existing product,
 Besides helping me flesh out and understand the product better, these personas will help me prepare the user flows.
 
 Gallery
-[cya-2.png]
-[cya-3.png]
-[cya-4.png]
-[cya-5.png]
+![cya-2.png](cya-2.png)
+![cya-3.png](cya-3.png)
+![cya-4.png](cya-4.png)
+![cya-5.png](cya-5.png)
 
 ### EVALUATING AND UNDERSTANDING THE CURRENT PRODUCT
 
 During my job interview and the first couple of days of my internship, I reviewed the existing product and reported my findings to the developer team. I did my review according to the 10 Usability Heuristics by Jakob Nielsen, I also used the general best practices I have learned through my previous works and education.
 
 Gallery
-[cya-6.png]
-[cya-7.png]
+![cya-6.png](cya-6.png)
+![cya-7.png](cya-7.png)
 
 Before putting anything on top of the app, I first needed to know more about it.  During this process I asked a bunch of questions including a lot of "Why?"s, "How"s and "Who"s.  After I got a grasp of the product, I decided to start with creating personas.
 
@@ -59,21 +59,21 @@ This experience made me understand better how user interest is not always mutual
 ### User Flows
 
 Gallery
-[cya-8.png]
-[cya-9.png]
-[cya-10.png]
+![cya-8.png](cya-8.png)
+![cya-9.png](cya-9.png)
+![cya-10.png](cya-10.png)
 
 ## Design
 
 ### Wireframes
 
-[cya-11.png]
+![cya-11.png](cya-11.png)
 
 ### Low Fidelity Video Upload Module
 
 Gallery
-[cya-12.png]
-[cya-13.png]
+![cya-12.png](cya-12.png)
+![cya-13.png](cya-13.png)
 
 ### Reflection
 
@@ -86,5 +86,5 @@ The big keyword during my field placement was "adaptation". By the end of my pla
 
 I also got a good grasp of mobile typography, hierarchy and sizes thanks to numerous wireframe designs and competitor benchmarks.
 
-[cya-14.png]
+![cya-14.png](cya-14.png)
 Caption: "Our office was right across the Art Gallery of Ontario. This was the perfect excuse for me to visit the AGO more than enough times."

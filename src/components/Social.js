@@ -22,7 +22,7 @@ const Social = () => {
 
   const socialItems = data.markdownRemark.frontmatter.social;
   return (
-    <div className="mt-4">
+    <div className="mt-6 mb-2">
       {socialItems.map((social) => (
         <SocialCard key={uuidv4()} social={social} />
       ))}

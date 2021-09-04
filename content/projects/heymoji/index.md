@@ -8,7 +8,7 @@ category: Product Design
 subcategory: Contract Work
 roles: [Product Designer, UX Researcher]
 stack: [Adobe XD, Adobe After Effects, Zeplin, Idiogrid, Custom Software]
-thumbnail: [heymoji-1.png]
+thumbnail: "./heymoji-1.png"
 solo: false
 wip: false
 featured: false
@@ -38,19 +38,19 @@ The research process aimed to answer:
 
 While a heuristic evaluation was not a deliverable for this project, I am glad that I did it because the findings helped me in later stages while designing the Editor. I have used a checklist made by Xerox based on [Jakob Nielsen's Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) for the evaluation. The results have shown a couple of basic issues that may confuse the users and a couple of issues that have the possibility to frustrate them by breaking the flow.
 
-[heymoji-2.png]
+![heymoji-2.png](heymoji-2.png)
 Caption: "A list of usability issues I have found during evaluation."
 
 ### Repertory Grid Interview Study
 
 This was the most vital and most challenging part of the whole project. iVirtual has created a tool for me to able to conduct this study efficiently.
 
-[heymoji-3.png]
+![heymoji-3.png](heymoji-3.png)
 Caption: "The tool has helped me to conduct the study more efficiently."
 
 For the study, I have shown a randomly generated ~50 triads from 10 different animations to each participant and asked them to select the odd one out and tell me what makes it different by using a single word or a short phrase. These definitions the participants have used created the “constructs”.
 
-[heymoji-4.png]
+![heymoji-4.png](heymoji-4.png)
 Caption: "An example study where you can see the constructs, contrasts and factor names."
 
 ### Competitor Benchmark
@@ -76,16 +76,16 @@ This was the first time I’ve sketched with simultaneous feedback from the deve
 Most obstacles I have faced during the process were based on technical limitations and the duration of the project. For example, creating an intuitive search experience was out of the question because the developers did not have the time or resources to create a custom keyboard. This made me and the dev team think harder and come up with simpler solutions for the problems we have faced.
 
 Gallery
-[heymoji-5.jpeg]
-[heymoji-6.jpeg]
-[heymoji-7.jpeg]
-[heymoji-8.jpeg]
-[heymoji-9.jpeg]
-[heymoji-10.jpeg]
-[heymoji-11.jpeg]
-[heymoji-12.jpeg]
-[heymoji-13.jpeg]
-[heymoji-14.jpeg]
+![heymoji-5.jpeg](heymoji-5.jpeg)
+![heymoji-6.jpeg](heymoji-6.jpeg)
+![heymoji-7.jpeg](heymoji-7.jpeg)
+![heymoji-8.jpeg](heymoji-8.jpeg)
+![heymoji-9.jpeg](heymoji-9.jpeg)
+![heymoji-10.jpeg](heymoji-10.jpeg)
+![heymoji-11.jpeg](heymoji-11.jpeg)
+![heymoji-12.jpeg](heymoji-12.jpeg)
+![heymoji-13.jpeg](heymoji-13.jpeg)
+![heymoji-14.jpeg](heymoji-14.jpeg)
 
 ### Low Fidelity Wireframes
 
@@ -98,31 +98,31 @@ Since it is not possible to show finger gestures that would be used to interact 
 https://www.youtube.com/watch?v=z2UOiwyYAyg
 
 Gallery
-[heymoji-15.png]
-[heymoji-16.png]
-[heymoji-17.png]
-[heymoji-18.png]
-[heymoji-19.png]
-[heymoji-20.png]
-[heymoji-21.png]
-[heymoji-22.png]
-[heymoji-23.png]
-[heymoji-24.png]
+![heymoji-15.png](heymoji-15.png)
+![heymoji-16.png](heymoji-16.png)
+![heymoji-17.png](heymoji-17.png)
+![heymoji-18.png](heymoji-18.png)
+![heymoji-19.png](heymoji-19.png)
+![heymoji-20.png](heymoji-20.png)
+![heymoji-21.png](heymoji-21.png)
+![heymoji-22.png](heymoji-22.png)
+![heymoji-23.png](heymoji-23.png)
+![heymoji-24.png](heymoji-24.png)
 
 ### High Fidelity Wireframes
 
 Since iVirtual already had its branding and app designed, I didn’t have much liberty playing with the colours or fonts. So for most elements, I followed the branding guidelines prepared by the previous designers.
 
 Gallery
-[heymoji-25.png]
-[heymoji-26.png]
-[heymoji-27.png]
-[heymoji-28.png]
-[heymoji-29.png]
-[heymoji-30.png]
-[heymoji-31.png]
-[heymoji-32.png]
-[heymoji-33.png]
+![heymoji-25.png](heymoji-25.png)
+![heymoji-26.png](heymoji-26.png)
+![heymoji-27.png](heymoji-27.png)
+![heymoji-28.png](heymoji-28.png)
+![heymoji-29.png](heymoji-29.png)
+![heymoji-30.png](heymoji-30.png)
+![heymoji-31.png](heymoji-31.png)
+![heymoji-32.png](heymoji-32.png)
+![heymoji-33.png](heymoji-33.png)
 
 ## Results
 
