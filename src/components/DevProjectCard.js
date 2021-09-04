@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+
 const DevProjectCard = ({ project }) => {
   const { title, stack, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
 
