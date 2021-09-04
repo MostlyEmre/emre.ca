@@ -45,7 +45,7 @@ const Contact = () => {
         <title>☎️ Contact | Emre's Space</title>
       </Helmet>
       <div className="max-w-md text-lg">
-        <h1 className="h2 mb-5">Let's Collaborate!</h1>
+        <h1 className="h2 my-5">Let's Collaborate!</h1>
         <p className="">Feel free to contact me about your next project or something you found interesting on my portfolio or about anything really.</p>
         {isSent ? (
           <div className="bg-green-400 text-gray-50 px-4 py-2 my-2 text-base font-light">

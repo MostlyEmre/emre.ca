@@ -10,7 +10,7 @@ const About = ({ data }) => {
       <Helmet>
         <title>👨🏻 About | Emre's Space</title>
       </Helmet>
-      <div className="">
+      <div className="mt-5">
         <div className="markdown max-w-xl" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
 
         {/* <div>
