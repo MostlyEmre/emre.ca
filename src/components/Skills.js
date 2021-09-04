@@ -24,7 +24,7 @@ const Skills = () => {
 
   return (
     <div>
-      <h2 className="h2 mt-5 mb-5">Technical Skills</h2>
+      <h2 className="h2 my-5">Technical Skills</h2>
       <div className="flex flex-wrap">
         {skillsDB.map((skill) => (
           <SkillCard skill={skill} />

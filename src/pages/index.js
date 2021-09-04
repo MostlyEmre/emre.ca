@@ -4,6 +4,7 @@ import Skills from "../components/Skills";
 import { PastClients } from "../components/PastClients";
 import { Layout } from "../components/Layout";
 import { Helmet } from "react-helmet";
+import FeaturedProjects from "../components/FeaturedProjects";
 // markup
 const IndexPage = () => {
   return (
@@ -17,7 +18,6 @@ const IndexPage = () => {
             <p className="font-light text-gray-400 text-sm">Ex-Product Designer</p>
           </div>
         </div>
-
         <div className="flex cursor-default">
           <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">📍</div>
 
@@ -27,11 +27,13 @@ const IndexPage = () => {
       <Helmet>
         <title>🏠 Home | Emre's Space</title>
       </Helmet>
+
       <div className="">
         {/* Technical Skills */}
         <div className="max-w-4xl">
           <Skills />
         </div>
+        <FeaturedProjects />
 
         {/* Past Clients */}
         <div className="mt-5">

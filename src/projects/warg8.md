@@ -2,7 +2,7 @@
 title: WarG8 Card Game
 slug: hacker-news-paywall-archiver
 stack: [HTML, React, TypeScript, Tailwind CSS, Firebase Hosting, Adobe Photoshop]
-description: A card game I built as a front-end challenge for the Mintbean Hiring Hackathon.
+description: A card game I built as a front-end challenge for the Mintbean Hiring Hackathon. Earned a "Mintbean Star" award.
 features: [Fully Responsive, Chat-Box, CSS Playing Cards, React Router]
 duration: 1 Week
 type: Website

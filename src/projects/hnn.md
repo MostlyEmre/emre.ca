@@ -8,7 +8,7 @@ duration: 1 Week
 solo: true
 wip: false
 type: Website
-featured: false
+featured: true
 live: https://hn.emre.la
 source: https://github.com/EmreYYZ/hnn
 ---
