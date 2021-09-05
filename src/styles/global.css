@@ -30,12 +30,15 @@
   .h2 {
     @apply text-4xl font-bold;
   }
+
   .h3 {
     @apply text-2xl font-medium;
   }
+
   .meta-detail {
-    @apply mr-2 mb-2 text-gray-600 text-sm bg-gray-50 py-1 px-2;
+    @apply text-gray-600 text-sm bg-gray-50 px-2 py-1 mr-2 mb-2;
   }
+
   .skill {
     @apply inline-block mr-6 mb-6 sm:mb-0 text-6xl sm:text-5xl cursor-pointer;
   }

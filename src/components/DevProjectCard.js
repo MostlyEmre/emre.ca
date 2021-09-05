@@ -1,5 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import { EmojiProvider, Emoji } from "react-apple-emojis";
+import emojiData from "react-apple-emojis/lib/data.json";
 
 const DevProjectCard = ({ project }) => {
   const { title, stack, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
@@ -14,14 +16,55 @@ const DevProjectCard = ({ project }) => {
 
         {/* Meta Details */}
         <div className="flex flex-wrap bg-gray-200 px-4 pt-2">
-          {featured ? <p className="meta-detail bg-green-300">🤩</p> : null}
+          <div className="meta-detail bg-gray-800 text-white">
+            <EmojiProvider data={emojiData}>
+              <div className="flex content-center">
+                <Emoji className="mr-1 self-center align-middle" name="light-bulb" width={16} />
+                <p className="">{type}</p>
+              </div>
+            </EmojiProvider>
+          </div>
 
-          <p className="meta-detail">🪴 {type}</p>
-          {wip ? <p className="meta-detail">🧘‍♂️ WIP</p> : null}
-          <p className="meta-detail">
-            {wip === true ? "⏳" : "⌛"} {duration}
-          </p>
-          {solo ? <p className="meta-detail">🥷🏼 Solo</p> : <p className="meta-detail">Group</p>}
+          {wip ? (
+            <div className="meta-detail bg-gray-800 text-white">
+              <EmojiProvider data={emojiData}>
+                <div className="flex content-center">
+                  <Emoji className="mr-1 self-center align-middle" name="person-in-lotus-position" width={16} />
+                  <p className="">WIP</p>
+                </div>
+              </EmojiProvider>
+            </div>
+          ) : null}
+
+          <div className="meta-detail bg-gray-800 text-white">
+            <EmojiProvider data={emojiData}>
+              <div className="flex content-center">
+                {wip === true ? (
+                  <Emoji className="mr-1 self-center align-middle" name="hourglass-not-done" width={16} />
+                ) : (
+                  <Emoji className="mr-1 self-center align-middle" name="hourglass-done" width={16} />
+                )}
+                <p className="">{duration}</p>
+              </div>
+            </EmojiProvider>
+          </div>
+
+          {solo ? (
+            <div className="meta-detail bg-gray-100 text-gray-900">
+              <EmojiProvider data={emojiData}>
+                <div className="flex content-center">
+                  <Emoji className="mr-1 self-center align-middle" name="ninja" width={16} />
+                  <p>Solo</p>
+                </div>
+              </EmojiProvider>
+            </div>
+          ) : (
+            <div className="meta-detail bg-gray-50 text-gray-900">
+              <div className="flex content-center">
+                <p>Solo</p>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Description */}

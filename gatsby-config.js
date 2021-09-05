@@ -60,6 +60,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sandbox`,
+        path: `${__dirname}/content/sandbox`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
