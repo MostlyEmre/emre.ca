@@ -25,7 +25,7 @@ export const SmallProjectCard = ({ projectData }) => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.9 }}
               href={projectData.live}
-              className="bg-pink-600 py-2 text-center text-sm text-gray-50 hover:bg-pink-800 font-bold uppercase"
+              className="bg-pink-500 py-2 text-center text-sm text-gray-50 hover:bg-pink-700 font-bold uppercase"
               target="_blank"
               rel="noopener noreferrer"
             >
