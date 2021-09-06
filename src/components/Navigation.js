@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 const Navigation = ({ children }) => {
   const upperMenu = [
     { page: "Code", url: "/code" },
-    // { page: "Sandbox", url: "/sandbox" },
+    { page: "Sandbox", url: "/sandbox" },
     // { page: "Design", url: "/design" },
   ];
 

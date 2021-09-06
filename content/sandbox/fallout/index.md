@@ -1,8 +1,9 @@
 ---
-title: Politics, Tech and Fallout Shelters
-tools: [Adobe Illustrator, Adobe Photoshop, Adobe XD]
-category: Sandbox
-slug: politics-tech-fallout-shelters
+title: "Politics, Tech and Fallout Shelters"
+category: "Sandbox"
+slug: "politics-tech-fallout-shelters"
+description: "A visualization study on how the media affected the fallout shelter craze."
+tech: ["Adobe Illustrator", "Adobe Photoshop", "Adobe XD"]
 ---
 
 ![fallout-1.png](fallout-1.png)

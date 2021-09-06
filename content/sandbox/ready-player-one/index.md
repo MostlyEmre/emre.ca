@@ -1,8 +1,9 @@
 ---
-title: Ready Player One
-tools: [Adobe Photoshop, Autodesk Maya]
-category: Sandbox
-slug: ready-player-one-book-cover
+title: "Ready Player One"
+category: "Sandbox"
+slug: "ready-player-one-book-cover"
+tech: ["Adobe Photoshop", "Autodesk Maya"]
+description: "A book cover I've designed for the book Ready Player One."
 ---
 
 ![rpo-1.png](rpo-1.png)

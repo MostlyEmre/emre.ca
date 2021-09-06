@@ -1,8 +1,9 @@
 ---
-title: E.C.H.O Riot High Concept Video
-tools: [Adobe Premiere Pro]
-category: Sandbox
-slug: echo-riot-high-concept-video
+title: "E.C.H.O Riot High Concept Video"
+category: "Sandbox"
+slug: "echo-riot-high-concept-video"
+description: "A high concept video depicting the contrast between media, power and reality."
+tech: ["Adobe Premiere Pro", "Adobe Photoshop"]
 ---
 
 To read about E.C.H.O in detail, follow this link.
