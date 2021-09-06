@@ -1,6 +1,8 @@
 ---
 title: Politics, Tech and Fallout Shelters
 tools: [Adobe Illustrator, Adobe Photoshop, Adobe XD]
+category: Sandbox
+slug: politics-tech-fallout-shelters
 ---
 
 ![fallout-1.png](fallout-1.png)

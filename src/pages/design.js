@@ -1,9 +1,11 @@
 import React from "react";
 
-export const BlogPost = () => {
+const Design = () => {
   return (
     <div>
-      <p>This is a blog post.</p>
+      <p>yarrak</p>
     </div>
   );
 };
+
+export default Design;

@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import "../styles/global.css";
 import DevProjectCard from "../components/DevProjectCard";
 import { Helmet } from "react-helmet";
+
 const Projects = ({ data }) => {
   // const { title, stack, slug } = data.allMarkdownRemark.nodes.frontmatter;
   // console.log(data);
