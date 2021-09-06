@@ -1,7 +1,33 @@
 exports.createPages = async function ({ graphql, actions }) {
-  const { data } = await graphql(`
+  const SANDBOX_QUERY = await graphql(`
     query GetSandboxPosts {
       allMdx(filter: { frontmatter: { category: { eq: "Sandbox" } } }) {
+        nodes {
+          id
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+  `);
+
+  const DESIGN_QUERY = await graphql(`
+    query GetDesignPosts {
+      allMdx(filter: { frontmatter: { category: { eq: "Design" } } }) {
+        nodes {
+          id
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+  `);
+
+  const CODE_QUERY = await graphql(`
+    query GetCodePosts {
+      allMdx(filter: { frontmatter: { category: { eq: "Code" } } }) {
         nodes {
           id
           frontmatter {
@@ -31,14 +57,42 @@ exports.createPages = async function ({ graphql, actions }) {
   //   });
   // });
 
-  // Create single blog posts
+  // Create Sandbox posts
 
-  data.allMdx.nodes.forEach((node) => {
+  SANDBOX_QUERY.data.allMdx.nodes.forEach((node) => {
     const slug = node.frontmatter.slug;
     const id = node.id;
 
     actions.createPage({
       path: `sandbox/${slug}`,
+      component: require.resolve(`./src/templates/sandboxPost.js`),
+      context: {
+        id,
+      },
+    });
+  });
+
+  // Create Design Posts
+  DESIGN_QUERY.data.allMdx.nodes.forEach((node) => {
+    const slug = node.frontmatter.slug;
+    const id = node.id;
+
+    actions.createPage({
+      path: `design/${slug}`,
+      component: require.resolve(`./src/templates/sandboxPost.js`),
+      context: {
+        id,
+      },
+    });
+  });
+
+  // Create Code Posts
+  CODE_QUERY.data.allMdx.nodes.forEach((node) => {
+    const slug = node.frontmatter.slug;
+    const id = node.id;
+
+    actions.createPage({
+      path: `code/${slug}`,
       component: require.resolve(`./src/templates/sandboxPost.js`),
       context: {
         id,

@@ -1,9 +1,9 @@
 ---
 title: Random Mifflin
 slug: random-mifflin
-stack: [HTML, CSS, JavaScript, Adobe XD, Adobe Photoshop]
+tools: [HTML, CSS, JavaScript, Adobe XD, Adobe Photoshop]
 description: Random Mifflin is a single-page web app that randomly generates a The Office (US) episode on demand.
-category: [Web Development, Product Design]
+category: Design
 subcategory: Passion Project
 duration: 2 Weeks
 role: [Frontend Developer, Product Designer]
@@ -21,7 +21,7 @@ source: https://github.com/EmreYYZ/random-mifflin
 
 ### Style Inspiration
 
-![rm-3.jpg](rm-3.png)
+![rm-3.jpg](rm-3.jpg)
 Before starting to laying out the wireframes and deciding on the branding, I decided to take a look at what makes The Office, The Office.
 
 Office life, at least the one that can be observed in the show, is monotone, far from exciting, orderly and boring. The same thing, except the boring part, can be said for Dwight Schrute even though he is my favourite character.

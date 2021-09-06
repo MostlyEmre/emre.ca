@@ -4,6 +4,7 @@ slug: modpod
 description: ModPod is a modular home consisting of smart building panels. Designed for young professionals.
 type: School Project
 duration: 8 weeks
+category: Design
 role: [Product Designer, Interaction Designer]
 tools: [Unreal Engine, Adobe Photoshop, Adobe XD, Sketch Up]
 hero: "./modpod-0.png"

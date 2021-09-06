@@ -4,10 +4,10 @@ slug: heymoji
 description: Heymoji is a mobile app being developed by iVirtual Technologies that helps users to create their 3D animated avatars with 2 photos of themselves.
 client: [iVirtual Technologies, GBC Research & Innovation]
 duration: 12 Weeks
-category: Product Design
+category: Design
 subcategory: Contract Work
 roles: [Product Designer, UX Researcher]
-stack: [Adobe XD, Adobe After Effects, Zeplin, Idiogrid, Custom Software]
+tools: [Adobe XD, Adobe After Effects, Zeplin, Idiogrid, Custom Software]
 thumbnail: "./heymoji-1.png"
 solo: false
 wip: false

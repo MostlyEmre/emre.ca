@@ -4,10 +4,10 @@ slug: cya-live
 description: CYA Live is a website where users can watch movies with celebrities and friends.
 hero: "./cya-1.png"
 thumbnail: "./cya-0.png"
-category: Product Design
+category: Design
 subcategory: Internship
 roles: Product Designer
-stack: Adobe XD
+tools: [Adobe XD]
 client: Cya Live
 duration: 2 months
 solo: true

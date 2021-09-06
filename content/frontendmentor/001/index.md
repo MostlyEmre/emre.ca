@@ -4,7 +4,7 @@ frontendmentor: true
 difficulty: Newbie
 duration: 3 Hours
 challenge: 001
-stack: [HTML, CSS]
+tools: [HTML, CSS]
 features: [Responsive, Flexbox]
 live: https://emreyyz.github.io/frontendmentor-001/
 source: https://github.com/EmreYYZ/frontendmentor-001

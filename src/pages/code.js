@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 const Projects = ({ data }) => {
   // const { title, stack, slug } = data.allMarkdownRemark.nodes.frontmatter;
   // console.log(data);
-  const projects = data.allMarkdownRemark.nodes;
+  const projects = data.allMdx.nodes;
   const featured = projects.filter((project) => project.frontmatter.featured);
   return (
     <Layout>
@@ -40,12 +40,13 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
   query DevList {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(projects)/" } }) {
+    allMdx(filter: { fileAbsolutePath: { regex: "/(code)/" } }) {
       nodes {
         frontmatter {
           title
           slug
-          stack
+          tech
+          category
           description
           features
           duration

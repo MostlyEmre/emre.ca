@@ -28,15 +28,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
+        name: `code`,
+        path: `${__dirname}/content/code`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/src/projects`,
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
     {
@@ -65,6 +65,13 @@ module.exports = {
       options: {
         name: `sandbox`,
         path: `${__dirname}/content/sandbox`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `design`,
+        path: `${__dirname}/content/design`,
       },
     },
     `gatsby-plugin-image`,

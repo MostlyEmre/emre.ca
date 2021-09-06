@@ -4,7 +4,7 @@ import { EmojiProvider, Emoji } from "react-apple-emojis";
 import emojiData from "react-apple-emojis/lib/data.json";
 
 const DevProjectCard = ({ project }) => {
-  const { title, stack, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
+  const { title, tech, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
 
   return (
     <div className="bg-gray-100 border-4 border-gray-300 flex flex-col justify-between md:mr-8 max-w-sm mb-8">
@@ -90,7 +90,7 @@ const DevProjectCard = ({ project }) => {
         <div className="pb-2 pt-2 px-4">
           <h3 className="font-medium text-md mb-2">Stack</h3>
           <ul className="flex flex-wrap cursor-default">
-            {stack
+            {tech
               .sort(function (a, b) {
                 if (a < b) {
                   return -1;

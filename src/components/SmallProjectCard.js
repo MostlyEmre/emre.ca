@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
+
 export const SmallProjectCard = ({ projectData }) => {
   return (
     <div className="px-4 pt-3 pb-3 bg-gray-900 flex flex-col justify-between  max-w-md">
@@ -10,9 +11,9 @@ export const SmallProjectCard = ({ projectData }) => {
 
         {/* PROJECT STACK */}
         <ul className="flex flex-wrap mb-2 cursor-default">
-          {projectData.stack.map((tech) => (
+          {projectData.tech.map((tool) => (
             <li className="flex-grow mr-2 bg-gray-700 text-sm text-gray-300 mb-2 py-1 px-2 text-center" key={uuidv4()}>
-              {tech}
+              {tool}
             </li>
           ))}
         </ul>
