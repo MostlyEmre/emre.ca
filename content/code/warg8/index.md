@@ -9,7 +9,7 @@ type: "Website"
 solo: true
 wip: false
 featured: true
-live: "https://war.emre.la"
+live: "https://war.emre.ca"
 source: "https://github.com/EmreYYZ/warg8"
 features: ["Fully Responsive", "Chat-Box", "CSS Playing Cards", "React Router"]
 ---

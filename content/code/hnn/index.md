@@ -9,7 +9,7 @@ solo: true
 wip: false
 type: "Website"
 featured: true
-live: "https://hn.emre.la"
+live: "https://hn.emre.ca"
 source: "https://github.com/EmreYYZ/hnn"
 tech: ["HTML", "CSS", "React", "Firebase Hosting", "REST APIs"]
 ---

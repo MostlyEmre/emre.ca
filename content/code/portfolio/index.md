@@ -7,9 +7,9 @@ features: null
 duration: "2 Weeks"
 solo: true
 type: "Website"
-live: "https://emre.la"
+live: "https://emre.ca"
 wip: false
 featured: true
-source: "https://github.com/EmreYYZ/emre.la"
+source: "https://github.com/EmreYYZ/emre.ca"
 tech: ["HTML", "Tailwind CSS", "GatsbyJS", "JavaScript", "Framer Motion"]
 ---

@@ -19,7 +19,7 @@ social:
   [
     { name: GitHub, url: https://github.com/EmreYYZ, icon: SiGithub, color: gray-900 },
     { name: LinkedIn, url: https://www.linkedin.com/in/johnaydin/, icon: SiLinkedin, color: blue-400 },
-    { name: Instagram, url: https://www.instagram.com/emre.la/, icon: SiInstagram, color: pink-400 },
+    { name: Instagram, url: https://www.instagram.com/MostlyEmre/, icon: SiInstagram, color: pink-400 },
     { name: Medium, url: https://emreca.medium.com/, icon: SiMedium, color: gray-900 },
     { name: Twitter, url: https://twitter.com/MostlyEmre, icon: SiTwitter, color: blue-400 },
     { name: Spotify, url: https://open.spotify.com/user/emre.la?si=436eddc77edf438e, icon: SiSpotify, color: green-400 },
