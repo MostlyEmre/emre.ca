@@ -5,6 +5,7 @@ description: "ModPod is a modular home consisting of smart building panels. Desi
 type: "School Project"
 duration: "8 weeks"
 category: "Design"
+date: "2019-10-20"
 role: ["Product Designer", "Interaction Designer"]
 tech: ["Unreal Engine", "Adobe Photoshop", "Adobe XD", "Sketch Up"]
 hero: "./modpod-0.png"

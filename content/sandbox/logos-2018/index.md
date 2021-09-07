@@ -3,6 +3,7 @@ title: "Logos 2018"
 category: "Sandbox"
 slug: "logos-2018"
 description: "I've created a number of logos in 2018 for contests on freelancer.com."
+date: "2018-01-20"
 tech: ["Adobe Illustrator", "Adobe Photoshop"]
 ---
 

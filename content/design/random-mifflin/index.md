@@ -6,11 +6,11 @@ description: "Random Mifflin is a single-page web app that randomly generates a 
 category: "Design"
 subcategory: "Passion Project"
 duration: "2 Weeks"
+date: "2019-04-20"
 role: ["Frontend Developer", "Product Designer"]
 solo: true
 wip: false
 featured: false
-completedTime:
 thumbnail: "./rm-0.png"
 hero: "./rm-1.png"
 live: "https://randommifflin.com"

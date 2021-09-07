@@ -3,6 +3,7 @@ title: "Ready Player One"
 category: "Sandbox"
 slug: "ready-player-one-book-cover"
 tech: ["Adobe Photoshop", "Autodesk Maya"]
+date: "2018-03-20"
 description: "A book cover I've designed for the book Ready Player One."
 ---
 

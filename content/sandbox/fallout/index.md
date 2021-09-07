@@ -3,6 +3,7 @@ title: "Politics, Tech and Fallout Shelters"
 category: "Sandbox"
 slug: "politics-tech-fallout-shelters"
 description: "A visualization study on how the media affected the fallout shelter craze."
+date: "2018-12-20"
 tech: ["Adobe Illustrator", "Adobe Photoshop", "Adobe XD"]
 ---
 
