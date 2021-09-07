@@ -53,8 +53,8 @@ const DevProjectCard = ({ project }) => {
             <div className="meta-detail bg-gray-100 text-gray-900">
               <EmojiProvider data={emojiData}>
                 <div className="flex content-center">
-                  <Emoji className="mr-1 self-center align-middle" name="ninja" width={16} />
-                  <p>Solo</p>
+                  {/* <Emoji className="mr-1 self-center align-middle" name="ninja" width={16} /> */}
+                  <p>🥷🏼 Solo</p>
                 </div>
               </EmojiProvider>
             </div>
