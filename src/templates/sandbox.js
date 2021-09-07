@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Layout } from "../components/Layout";
 import { SandboxCard } from "../components/SandboxCard";
-
+import { Helmet } from "react-helmet";
 const Sandbox = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
@@ -14,6 +14,9 @@ const Sandbox = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>🌌 Sandbox | Emre's Space</title>
+      </Helmet>
       <div className="my-5">
         <h1 className="h2 mb-3">Sandbox</h1>
 

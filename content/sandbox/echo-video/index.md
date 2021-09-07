@@ -6,7 +6,7 @@ description: "A high concept video depicting the contrast between media, power a
 tech: ["Adobe Premiere Pro", "Adobe Photoshop"]
 ---
 
-To read about E.C.H.O in detail, follow this link.
+To read about E.C.H.O in detail, follow [this link](https://medium.com/tonal-shift/echo-anonymous-local-communication-69ee41dc4c05).
 
 The following video is a high concept video for it during the early steps of the project. The video basically touches upon the media as the great tranquilizer, and riots as a way for people to spend that piled up energy, to blow off steam.
 
