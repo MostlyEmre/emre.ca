@@ -7,10 +7,14 @@ const SandboxPost = ({ data }) => {
 
   return (
     <Layout>
-      <div className="max-w-xl text-justify">
-        <p>{sandbox.frontmatter.title}</p>
-        <p>{sandbox.frontmatter.slug}</p>
-        <div className="markdown">
+      <div className="max-w-xl mt-5 text-justify">
+        <h1 className="h2">{sandbox.frontmatter.title}</h1>
+        <p className="text-gray-400 my-1 text-sm">
+          {sandbox.frontmatter.slug} // {sandbox.timeToRead} min. // {sandbox.wordCount.words} words
+        </p>
+        <p className="text-lg text-gray-600">{sandbox.frontmatter.description}</p>
+        <div className="max-w-md border-b-2 pb-7"></div>
+        <div className="markdown mt-5">
           <MDXRenderer>{sandbox.body}</MDXRenderer>
         </div>
       </div>
@@ -26,8 +30,13 @@ export const query = graphql`
       frontmatter {
         slug
         title
+        description
       }
+      timeToRead
       body
+      wordCount {
+        words
+      }
     }
   }
 `;

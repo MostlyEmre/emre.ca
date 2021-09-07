@@ -1,18 +1,18 @@
 ---
-title: Heymoji
-slug: heymoji
-description: Heymoji is a mobile app being developed by iVirtual Technologies that helps users to create their 3D animated avatars with 2 photos of themselves.
-client: [iVirtual Technologies, GBC Research & Innovation]
-duration: 12 Weeks
-category: Design
-subcategory: Contract Work
-roles: [Product Designer, UX Researcher]
-tools: [Adobe XD, Adobe After Effects, Zeplin, Idiogrid, Custom Software]
+title: "Heymoji"
+slug: "heymoji"
+description: "Heymoji is a mobile app being developed by iVirtual Technologies that helps users to create their 3D animated avatars with 2 photos of themselves."
+client: ["iVirtual Technologies", "GBC Research & Innovation"]
+duration: "12 Weeks"
+category: "Design"
+subcategory: "Contract Work"
+roles: ["Product Designer", "UX Researcher"]
+tech: ["Adobe XD", "Adobe After Effects", "Zeplin", "Idiogrid", "Custom Software"]
 thumbnail: "./heymoji-1.png"
 solo: false
 wip: false
 featured: false
-live: https://apps.apple.com/ca/app/heymoji/id1460741366
+live: "https://apps.apple.com/ca/app/heymoji/id1460741366"
 ---
 
 ## The Problem

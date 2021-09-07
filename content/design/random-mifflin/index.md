@@ -1,20 +1,20 @@
 ---
-title: Random Mifflin
-slug: random-mifflin
-tools: [HTML, CSS, JavaScript, Adobe XD, Adobe Photoshop]
-description: Random Mifflin is a single-page web app that randomly generates a The Office (US) episode on demand.
-category: Design
-subcategory: Passion Project
-duration: 2 Weeks
-role: [Frontend Developer, Product Designer]
+title: "Random Mifflin"
+slug: "random-mifflin"
+tech: ["HTML", "CSS", "JavaScript", "Adobe XD", "Adobe Photoshop"]
+description: "Random Mifflin is a single-page web app that randomly generates a The Office (US) episode on demand."
+category: "Design"
+subcategory: "Passion Project"
+duration: "2 Weeks"
+role: ["Frontend Developer", "Product Designer"]
 solo: true
 wip: false
 featured: false
 completedTime:
 thumbnail: "./rm-0.png"
 hero: "./rm-1.png"
-live: https://randommifflin.com
-source: https://github.com/EmreYYZ/random-mifflin
+live: "https://randommifflin.com"
+source: "https://github.com/EmreYYZ/random-mifflin"
 ---
 
 ## Branding
