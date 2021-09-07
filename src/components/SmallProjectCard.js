@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const SmallProjectCard = ({ projectData }) => {
   return (
-    <div className="px-4 pt-3 pb-3 bg-gray-900 flex flex-col justify-between  max-w-md">
+    <div className="px-4 pt-3 pb-3 bg-gradient-to-tr from-gray-800 via-gray-900 to-black flex flex-col justify-between  max-w-md">
       {/* PROJECT TITLE */}
       <div>
         <h3 className="text-2xl text-gray-50 font-medium mb-4 cursor-default">{projectData.title}</h3>
@@ -26,7 +26,7 @@ export const SmallProjectCard = ({ projectData }) => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.9 }}
               href={projectData.live}
-              className="bg-pink-500 py-2 text-center text-sm text-gray-50 hover:bg-pink-700 font-bold uppercase"
+              className="bg-gradient-to-r from-pink-500 to-pink-600 py-2 text-center text-sm text-gray-50 font-bold uppercase"
               target="_blank"
               rel="noopener noreferrer"
             >

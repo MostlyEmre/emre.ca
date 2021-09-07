@@ -3,7 +3,7 @@ import React from "react";
 
 export const SandboxCard = ({ title, slug, tech, description }) => {
   return (
-    <section className="p-4 border-l-8 border-indigo-500 my-4">
+    <section className="p-4 border-l-8 border-indigo-500  my-4">
       <Link className="inline-block" to={`/sandbox/${slug}`}>
         <h3 className="h3">{title}</h3>
       </Link>

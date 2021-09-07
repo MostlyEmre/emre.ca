@@ -19,7 +19,7 @@ const Navigation = ({ children }) => {
     <div>
       <ul className="list-none">
         {upperMenu.map((item) => (
-          <div className="animation inline-block mr-3 mt-5 mb-2 text-gray-500 hover:text-gray-900 text-lg" key={uuidv4()}>
+          <div className="animation inline-block mr-3 mt-5 mb-1 text-gray-500 hover:text-gray-900 text-lg" key={uuidv4()}>
             <Link to={`${item.url}`}>
               <li>{item.page}</li>
             </Link>
@@ -29,7 +29,7 @@ const Navigation = ({ children }) => {
       {children}
       <ul className="list-none">
         {lowerMenu.map((item) => (
-          <div className="animation inline-block mr-3 mt-3 mb-2 text-gray-500 hover:text-gray-900 text-lg" key={uuidv4()}>
+          <div className="animation inline-block mr-3 mt-2 mb-2 text-gray-500 hover:text-gray-900 text-lg" key={uuidv4()}>
             <Link to={`${item.url}`}>
               <li>{item.page}</li>
             </Link>
