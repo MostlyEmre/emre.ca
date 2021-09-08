@@ -93,7 +93,7 @@ exports.createPages = async function ({ graphql, actions }) {
 
     actions.createPage({
       path: `code/${slug}`,
-      component: require.resolve(`./src/templates/sandboxPost.js`),
+      component: require.resolve(`./src/templates/codePost.js`),
       context: {
         id,
       },

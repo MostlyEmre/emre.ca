@@ -2,7 +2,7 @@
 title: "Hacker News Paywall Archiver"
 slug: "hacker-news-paywall-archiver"
 category: "Code"
-description: "NodeJS script that checks and archives the latest paywalled Hacker News posts to remove their paywalls. Additional front-end to showcase the current stats. Created to help with Hacker News Reader."
+description: "Archives paywalled posts on Hacker News realtime. Showcases relevant stats and info."
 features: null
 duration: "2 Weeks"
 solo: true

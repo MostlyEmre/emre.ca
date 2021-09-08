@@ -1,8 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Layout } from "../components/Layout";
-import { SandboxCard } from "../components/SandboxCard";
+import { ProjectCard } from "../components/ProjectCard";
 import { Helmet } from "react-helmet";
+import { ProjectCards } from "../components/ProjectCards";
 const Sandbox = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
@@ -27,11 +28,7 @@ const Sandbox = ({ pageContext, data }) => {
             <b className="text-yellow-100">Sandbox</b>."
           </p>
         </section>
-        <section className="max-w-4xl mt-3 grid grid-cols-1 sm:grid-cols-2">
-          {posts.map((post) => (
-            <SandboxCard key={post.frontmatter.slug} title={post.frontmatter.title} slug={post.frontmatter.slug} tech={post.frontmatter.tech} description={post.frontmatter.description} />
-          ))}
-        </section>
+        <ProjectCards projects={posts} />
       </div>
     </Layout>
   );
@@ -48,6 +45,7 @@ export const query = graphql`
           slug
           tech
           description
+          category
         }
       }
     }

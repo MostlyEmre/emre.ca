@@ -2,6 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { v4 as uuidv4 } from "uuid";
 import { SmallProjectCard } from "./SmallProjectCard";
+import { ProjectCards } from "./ProjectCards";
 
 const FeaturedProjects = () => {
   const data = useStaticQuery(graphql`
@@ -12,6 +13,7 @@ const FeaturedProjects = () => {
             title
             slug
             description
+            category
             features
             tech
             duration
@@ -32,11 +34,12 @@ const FeaturedProjects = () => {
   return (
     <div>
       <h1 className="h2 my-5">Featured Projects</h1>
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 max-w-4xl">
+      <ProjectCards projects={featured} />
+      {/* <div className="grid gap-4 grid-cols-1 md:grid-cols-2 max-w-4xl">
         {featured.map((project) => (
           <SmallProjectCard projectData={project.frontmatter} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

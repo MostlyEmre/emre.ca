@@ -2,7 +2,7 @@
 title: "Personal Website (Portfolio)"
 slug: "personal-website"
 category: "Code"
-description: "The website you are seeing right now. My personal website. Source code is not public due to some of my past projects being NDA-protected."
+description: "My personal space. This website."
 features: null
 duration: "2 Weeks"
 solo: true

@@ -3,7 +3,7 @@ title: "WarG8 Card Game"
 tech: ["React", "TypeScript", "Tailwind CSS", "Firebase Hosting", "Adobe Photoshop"]
 slug: "warg8-card-game"
 category: "Code"
-description: "A card game I built as a front-end challenge for the Mintbean Hiring Hackathon. Earned a 'Mintbean Star' award."
+description: "A card game for the Mintbean Hiring Hackathon. Awarded a 'Mintbean Star'."
 duration: "1 Week"
 type: "Website"
 solo: true
