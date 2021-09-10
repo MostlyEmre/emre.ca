@@ -6,7 +6,7 @@ const Navigation = ({ children }) => {
   const upperMenu = [
     { page: "Code", url: "/code" },
     { page: "Sandbox", url: "/sandbox" },
-    // { page: "Design", url: "/design" },
+    { page: "Design", url: "/design" },
   ];
 
   const lowerMenu = [
