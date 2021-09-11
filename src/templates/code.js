@@ -21,7 +21,7 @@ const Code = ({ pageContext, data }) => {
       </Helmet>
       <div className="my-5">
         <h1 className="h2 mb-3">Code</h1>
-        <section className="bg-gradient-to-tl from-blue-500 via-blue-700 to-blue-800 p-6 text-gray-50 max-w-4xl text-lg font-light text-justify">
+        <section className="bg-gradient-to-tl from-gray-700 via-gray-900 to-black p-6 text-gray-50 max-w-4xl text-lg font-light text-justify">
           <p>
             Being a self-taught developer means that I don't hesitate to delve into documentation. I am disciplined and have a passion for coding and
             technology. Here are the projects I've been creating during my developer journey.

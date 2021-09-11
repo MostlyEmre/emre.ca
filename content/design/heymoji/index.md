@@ -1,7 +1,7 @@
 ---
 title: "Heymoji"
 slug: "heymoji"
-description: "Heymoji is a mobile app being developed by iVirtual Technologies that helps users to create their 3D animated avatars with 2 photos of themselves."
+description: "Heymoji is a mobile app being developed by iVirtual Technologies Inc. to help users to create their 3D animated avatars with 2 photos of themselves."
 client: ["iVirtual Technologies", "GBC Research & Innovation"]
 duration: "12 Weeks"
 category: "Design"

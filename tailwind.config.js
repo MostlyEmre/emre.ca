@@ -23,6 +23,7 @@ module.exports = {
       "hover:bg-red-300",
       "hover:bg-purple-300",
       "hover:bg-yellow-300",
+      "bg-blue-400",
     ],
   },
   darkMode: false, // or 'media' or 'class'
