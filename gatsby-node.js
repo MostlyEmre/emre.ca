@@ -74,6 +74,23 @@ exports.createPages = async function ({ graphql, actions }) {
     });
   });
 
+  // Create paginated pages for posts
+
+  const codeNumPages = Math.ceil(CODE_QUERY.data.allMdx.nodes.length / postPerPage);
+
+  Array.from({ length: codeNumPages }).forEach((_, i) => {
+    actions.createPage({
+      path: i === 0 ? `/code` : `/code/${i + 1}`,
+      component: require.resolve("./src/templates/code.js"),
+      context: {
+        limit: postPerPage,
+        skip: i * postPerPage,
+        codeNumPages,
+        currentPage: i + 1,
+      },
+    });
+  });
+
   // Create Sandbox posts
 
   SANDBOX_QUERY.data.allMdx.nodes.forEach((node) => {
