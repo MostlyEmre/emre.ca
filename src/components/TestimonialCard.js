@@ -4,7 +4,7 @@ const TestimonialCard = ({ testimonial }) => {
   return (
     <div>
       <div>
-        <div className="p-4 bg-gray-100 border-b-4 border-pink-400">
+        <div className="p-4 bg-gray-100 border-b-8 border-pink-400">
           <ReadMore excerpt={testimonial.excerpt} full={testimonial} />
         </div>
         <div className="flex items-center bg-gray-200">
