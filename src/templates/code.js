@@ -53,7 +53,7 @@ export const query = graphql`
         }
       }
     }
-    featuredProjects: allMdx(filter: { fileAbsolutePath: { regex: "/(code)/" } }) {
+    featuredProjects: allMdx(filter: { fileAbsolutePath: { regex: "/(code)/" }, frontmatter: { featured: { eq: true } } }) {
       nodes {
         frontmatter {
           title
