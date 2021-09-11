@@ -15,13 +15,16 @@ const Design = ({ pageContext, data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>🌌 Sandbox | Emre's Space</title>
+        <title>🎨 Design | Emre's Space</title>
       </Helmet>
       <div className="my-5">
         <h1 className="h2 mb-3">Design</h1>
 
         <section className="bg-gradient-to-tl from-gray-700 via-gray-900 to-black p-6 text-gray-50 max-w-4xl text-lg font-light text-justify">
-          <p>As an ex product designer I did many design projects with early-stage startups. This page includes one of them plus some other design projects.</p>
+          <p>
+            As an ex product designer I did many design projects with early-stage startups. This page includes one of them plus some other design
+            projects.
+          </p>
         </section>
         <ProjectCards projects={posts} />
       </div>
