@@ -1,8 +1,10 @@
 ---
 title: "How to rescue your videos from Adobe Portfolio?"
+slug: "get-rid-of-adobe-portfolio"
 date: "Jul 27, 2020"
 category: "Blog"
 thumbnail: "./img/img-0.png"
+tech: ["Hack"]
 ---
 
 Lately, I’ve been witnessing subtle “defensive” design choices on the web more and more. In the last instance, I was switching my portfolio software from Adobe Portfolio to Webflow. However, it has been years since I added my first project on Adobe Portfolio, so most of the original project files are nowhere to be found in my PC. So I thought “I have my videos already on Adobe Portfolio, I just need to right-click and download!”. Well, I couldn’t do it. Adobe Portfolio doesn’t have the option to download the video.

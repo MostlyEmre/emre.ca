@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { Layout } from "../components/Layout";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Helmet } from "react-helmet";
-
+import { MetaInfoCard } from "../components/MetaInfoCard";
 const SandboxPost = ({ data }) => {
   const sandbox = data.mdx;
 
@@ -12,11 +12,18 @@ const SandboxPost = ({ data }) => {
       <Helmet>
         <title>🌌 {sandbox.frontmatter.title}</title>
       </Helmet>
-      <div className="max-w-xl mt-5 text-justify">
+      <div className="max-w-xl mt-5 markdown text-justify">
         <h1 className="h2">{sandbox.frontmatter.title}</h1>
-        <p className="text-gray-400 my-1 text-sm">
-          {sandbox.frontmatter.slug} // {sandbox.timeToRead} min. // {sandbox.wordCount.words} words
-        </p>
+        <MetaInfoCard
+          title={sandbox.frontmatter.title}
+          tech={sandbox.frontmatter.tech}
+          duration={sandbox.frontmatter.duration}
+          solo={sandbox.frontmatter.solo}
+          wip={sandbox.frontmatter.wip}
+          live={sandbox.frontmatter.live}
+          source={sandbox.frontmatter.source}
+        />
+
         <p className="text-lg text-gray-600">{sandbox.frontmatter.description}</p>
         <div className="max-w-md border-b-2 pb-6"></div>
         <div className="markdown mt-5">
@@ -36,6 +43,12 @@ export const query = graphql`
         slug
         title
         description
+        tech
+        duration
+        solo
+        wip
+        live
+        source
       }
       timeToRead
       body

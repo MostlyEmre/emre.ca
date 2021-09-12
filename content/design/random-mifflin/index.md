@@ -11,8 +11,8 @@ role: ["Frontend Developer", "Product Designer"]
 solo: true
 wip: false
 featured: false
-thumbnail: "./rm-0.png"
-hero: "./rm-1.png"
+thumbnail: "./img/rm-0.png"
+hero: "./img/rm-1.png"
 live: "https://randommifflin.com"
 source: "https://github.com/EmreYYZ/random-mifflin"
 ---

@@ -12,6 +12,19 @@ exports.createPages = async function ({ graphql, actions }) {
     }
   `);
 
+  const BLOG_QUERY = await graphql(`
+    query GetBlogPosts {
+      allMdx(filter: { frontmatter: { category: { eq: "Blog" } } }) {
+        nodes {
+          id
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+  `);
+
   const DESIGN_QUERY = await graphql(`
     query GetDesignPosts {
       allMdx(filter: { frontmatter: { category: { eq: "Design" } } }) {
@@ -76,6 +89,23 @@ exports.createPages = async function ({ graphql, actions }) {
 
   // Create paginated pages for posts
 
+  const blogNumPages = Math.ceil(BLOG_QUERY.data.allMdx.nodes.length / postPerPage);
+
+  Array.from({ length: blogNumPages }).forEach((_, i) => {
+    actions.createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: require.resolve("./src/templates/blog.js"),
+      context: {
+        limit: postPerPage,
+        skip: i * postPerPage,
+        blogNumPages,
+        currentPage: i + 1,
+      },
+    });
+  });
+
+  // Create paginated pages for posts
+
   const codeNumPages = Math.ceil(CODE_QUERY.data.allMdx.nodes.length / postPerPage);
 
   Array.from({ length: codeNumPages }).forEach((_, i) => {
@@ -106,6 +136,21 @@ exports.createPages = async function ({ graphql, actions }) {
     });
   });
 
+  // Create Blog posts
+
+  BLOG_QUERY.data.allMdx.nodes.forEach((node) => {
+    const slug = node.frontmatter.slug;
+    const id = node.id;
+
+    actions.createPage({
+      path: `blog/${slug}`,
+      component: require.resolve(`./src/templates/blogPost.js`),
+      context: {
+        id,
+      },
+    });
+  });
+
   // Create Design Posts
   DESIGN_QUERY.data.allMdx.nodes.forEach((node) => {
     const slug = node.frontmatter.slug;
@@ -113,7 +158,7 @@ exports.createPages = async function ({ graphql, actions }) {
 
     actions.createPage({
       path: `design/${slug}`,
-      component: require.resolve(`./src/templates/sandboxPost.js`),
+      component: require.resolve(`./src/templates/designPost.js`),
       context: {
         id,
       },

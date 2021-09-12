@@ -8,5 +8,5 @@ tech: ["HTML", "CSS"]
 features: ["Responsive", "Flexbox"]
 live: "https://emreyyz.github.io/frontendmentor-001/"
 source: "https://github.com/EmreYYZ/frontendmentor-001"
-thumbnail: "./screenshot.png"
+thumbnail: "./img/screenshot.png"
 ---
