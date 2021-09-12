@@ -61,7 +61,9 @@ After you press enter, this screen will open up.
 
 - Now to download, we will write the following into the command line.
 
-`youtube-dl THE_URL_YOU_HAVE_COPIED_THE_MASTER_M3U8_ONE`
+```
+youtube-dl THE_URL_YOU_HAVE_COPIED_THE_MASTER_M3U8_ONE
+```
 
 It will look like this:
 
