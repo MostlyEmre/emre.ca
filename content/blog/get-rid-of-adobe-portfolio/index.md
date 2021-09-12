@@ -7,7 +7,7 @@ thumbnail: "./img/img-0.png"
 tech: ["Hack"]
 ---
 
-Lately, I’ve been witnessing subtle “defensive” design choices on the web more and more. In the last instance, I was switching my portfolio software from Adobe Portfolio to Webflow. However, it has been years since I added my first project on Adobe Portfolio, so most of the original project files are nowhere to be found in my PC. So I thought “I have my videos already on Adobe Portfolio, I just need to right-click and download!”. Well, I couldn’t do it. Adobe Portfolio doesn’t have the option to download the video.
+Lately, I’ve been witnessing subtle “defensive” design choices on the web more and more. In the last instance, I was switching my portfolio software from Adobe Portfolio to Webflow. _(You are currently on my new custom built Gatsby blog!)_ However, it has been years since I added my first project on Adobe Portfolio, so most of the original project files are nowhere to be found in my PC. So I thought “I have my videos already on Adobe Portfolio, I just need to right-click and download!”. Well, I couldn’t do it. Adobe Portfolio doesn’t have the option to download the video.
 
 As a guy who loves a good challenge, I started to tinker. I tried the most popular Google Chrome extensions, didn’t work. The extensions work on 90% of the websites out there, it was just my bad luck that Adobe Portfolio was in the other 10%. Once I exhausted all my extension options, it was time to bring the big guns out…
 
@@ -49,7 +49,6 @@ Similar to big video platforms, Adobe Portfolio delivers the videos in chunks, �
 
 - Create a folder, my folder is called “Youtube”.
 - Put the youtube-dl.exe you have downloaded from this link [http://ytdl-org.github.io/youtube-dl/download.html](http://ytdl-org.github.io/youtube-dl/download.html) inside the folder.
-
 - Click on the directory path and write “cmd” and press enter. This will automatically open the Windows command line inside this folder. So you won’t have to write more commands than you need to.
 
 ![Image 5](./img/img-5.png)

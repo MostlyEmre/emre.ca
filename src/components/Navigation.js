@@ -10,7 +10,7 @@ const Navigation = ({ children }) => {
   ];
 
   const lowerMenu = [
-    // { page: "Blog", url: "/blog" },
+    { page: "Blog", url: "/blog" },
     { page: "About", url: "/about" },
     { page: "Contact", url: "/contact" },
   ];

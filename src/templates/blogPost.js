@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>🌌 {blog.frontmatter.title}</title>
+        <title>📝 {blog.frontmatter.title}</title>
       </Helmet>
       <div className="max-w-xl markdown mt-5 text-justify">
         <h1 className="h2">{blog.frontmatter.title}</h1>
