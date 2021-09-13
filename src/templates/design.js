@@ -36,7 +36,7 @@ export default Design;
 
 export const query = graphql`
   query DesignPostsPage($skip: Int!, $limit: Int!) {
-    allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Design" } } }) {
+    allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Design" } } }, sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
           title

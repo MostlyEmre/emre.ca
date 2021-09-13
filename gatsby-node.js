@@ -1,7 +1,7 @@
 exports.createPages = async function ({ graphql, actions }) {
   const SANDBOX_QUERY = await graphql(`
     query GetSandboxPosts {
-      allMdx(filter: { frontmatter: { category: { eq: "Sandbox" } } }) {
+      allMdx(filter: { frontmatter: { category: { eq: "Sandbox" } } }, sort: { fields: frontmatter___date, order: DESC }) {
         nodes {
           id
           frontmatter {
@@ -14,7 +14,7 @@ exports.createPages = async function ({ graphql, actions }) {
 
   const BLOG_QUERY = await graphql(`
     query GetBlogPosts {
-      allMdx(filter: { frontmatter: { category: { eq: "Blog" } } }) {
+      allMdx(filter: { frontmatter: { category: { eq: "Blog" } } }, sort: { fields: frontmatter___date, order: DESC }) {
         nodes {
           id
           frontmatter {
@@ -27,7 +27,7 @@ exports.createPages = async function ({ graphql, actions }) {
 
   const DESIGN_QUERY = await graphql(`
     query GetDesignPosts {
-      allMdx(filter: { frontmatter: { category: { eq: "Design" } } }) {
+      allMdx(filter: { frontmatter: { category: { eq: "Design" } } }, sort: { fields: frontmatter___date, order: DESC }) {
         nodes {
           id
           frontmatter {
@@ -40,7 +40,7 @@ exports.createPages = async function ({ graphql, actions }) {
 
   const CODE_QUERY = await graphql(`
     query GetCodePosts {
-      allMdx(filter: { frontmatter: { category: { eq: "Code" } } }) {
+      allMdx(filter: { frontmatter: { category: { eq: "Code" } } }, sort: { fields: frontmatter___date, order: DESC }) {
         nodes {
           id
           frontmatter {

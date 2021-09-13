@@ -34,7 +34,7 @@ export default Blog;
 
 export const query = graphql`
   query BlogPostsPage($skip: Int!, $limit: Int!) {
-    allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Blog" } } }) {
+    allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Blog" } } }, sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
           title

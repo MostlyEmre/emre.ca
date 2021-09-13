@@ -38,7 +38,7 @@ export default Sandbox;
 
 export const query = graphql`
   query SandboxPostsPage($skip: Int!, $limit: Int!) {
-    allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Sandbox" } } }) {
+    allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Sandbox" } } }, sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
           title

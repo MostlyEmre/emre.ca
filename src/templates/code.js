@@ -41,7 +41,12 @@ export default Code;
 
 export const query = graphql`
   query CodePostsPage($skip: Int!, $limit: Int!) {
-    allProjects: allMdx(skip: $skip, limit: $limit, filter: { frontmatter: { category: { eq: "Code" } } }) {
+    allProjects: allMdx(
+      skip: $skip
+      limit: $limit
+      filter: { frontmatter: { category: { eq: "Code" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           title
@@ -55,7 +60,10 @@ export const query = graphql`
         }
       }
     }
-    featuredProjects: allMdx(filter: { fileAbsolutePath: { regex: "/(code)/" }, frontmatter: { featured: { eq: true } } }) {
+    featuredProjects: allMdx(
+      filter: { fileAbsolutePath: { regex: "/(code)/" }, frontmatter: { featured: { eq: true } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           title
