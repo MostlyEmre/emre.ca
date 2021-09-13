@@ -1,7 +1,7 @@
 ---
 title: "How to rescue your videos from Adobe Portfolio?"
 slug: "get-rid-of-adobe-portfolio"
-date: "Jul 27, 2020"
+date: "2020-07-28"
 category: "Blog"
 thumbnail: "./img/img-0.png"
 tech: ["Hack"]

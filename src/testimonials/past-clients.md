@@ -1,8 +1,26 @@
 ---
 clients:
   [
-    { name: Seed Interactive, position: UX Researcher, duration: Feb. 2020 - May 2020, type: Contract, time: Part-time, location: Toronto, url: https://seedinteractive.co/, image: /clients/seed.png },
-    { name: Cya Live, position: Product Designer, duration: Jan. 2020 - Feb. 2020, type: Internship, time: Part-time, location: Toronto, url: https://www.cya.live/, image: /clients/cya.png },
+    {
+      name: Seed Interactive,
+      position: UX Researcher,
+      duration: Feb. 2020 - May 2020,
+      type: Contract,
+      time: Part-time,
+      location: Toronto,
+      url: https://seedinteractive.co/,
+      image: /clients/seed.png,
+    },
+    {
+      name: Cya Live,
+      position: Product Designer,
+      duration: Jan. 2020 - Feb. 2020,
+      type: Internship,
+      time: Part-time,
+      location: Toronto,
+      url: https://www.cya.live/,
+      image: /clients/cya.png,
+    },
     {
       name: iVirtual Technologies Inc.,
       position: Product Designer,
@@ -33,7 +51,16 @@ clients:
       url: https://www.mldsolutions.com/,
       image: /clients/mld.png,
     },
-    { name: George Brown College, position: Researcher, duration: Apr. 2018 - May 2020, type: Contract, time: Part-time, location: Toronto, url: https://www.gbcresearch.ca/, image: /clients/gbc.png },
+    {
+      name: George Brown College,
+      position: Researcher,
+      duration: Apr. 2018 - May 2020,
+      type: Contract,
+      time: Part-time,
+      location: Toronto,
+      url: https://www.gbcresearch.ca/,
+      image: /clients/gbc.png,
+    },
     {
       name: Citibank,
       position: Anti Money Laundering Analyst,
@@ -45,5 +72,6 @@ clients:
       image: /clients/seed.png,
     },
   ]
-type: Past Clients
+type: "Past Clients"
+date: "1990-01-01"
 ---

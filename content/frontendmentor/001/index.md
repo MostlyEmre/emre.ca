@@ -9,4 +9,5 @@ features: ["Responsive", "Flexbox"]
 live: "https://emreyyz.github.io/frontendmentor-001/"
 source: "https://github.com/EmreYYZ/frontendmentor-001"
 thumbnail: "./img/screenshot.png"
+date: "2021-08-28"
 ---

@@ -5,6 +5,7 @@ position: Product Designer
 company: Nulogy
 image: /testimonials/hs.jpeg
 type: Testimonials
+date: "1990-01-01"
 ---
 
 It was a blast having Emre as a teammate! I had the pleasure of working alongside him in different UX Research and Design projects for over a year at George Brown. I was continuously impressed by Emre's commitment to our projects, professionalism towards our clients, and immense design talent.

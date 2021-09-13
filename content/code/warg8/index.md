@@ -12,4 +12,5 @@ featured: true
 live: "https://war.emre.ca"
 source: "https://github.com/EmreYYZ/warg8"
 features: ["Fully Responsive", "Chat-Box", "CSS Playing Cards", "React Router"]
+date: "2021-08-15"
 ---

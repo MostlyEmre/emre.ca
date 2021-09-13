@@ -12,4 +12,5 @@ wip: false
 featured: true
 source: "https://github.com/EmreYYZ/emre.ca"
 tech: ["HTML", "Tailwind CSS", "GatsbyJS", "JavaScript", "Framer Motion"]
+date: "2021-09-12"
 ---

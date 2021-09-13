@@ -12,4 +12,5 @@ type: "Website"
 live: "https://hpa.emre.ca"
 source: "https://github.com/EmreYYZ/HN-Paywall-Archiver"
 tech: ["HTML", "React", "NodeJS", "Firebase Hosting", "Firestore", "Puppeteer", "TypeScript", "Tailwind CSS"]
+date: "2021-09-01"
 ---

@@ -14,7 +14,11 @@ skills:
     { name: Firebase, slug: firebase, icon: SiFirebase, color: yellow-300 },
     { name: Framer Motion, slug: framer-motion, icon: SiFramer, color: purple-300 },
   ]
-tools: [{ name: Figma, slug: figma, icon: SiFigma, color: pink-300 }, { name: Adobe Creative Suite, slug: adobe-creative-suite, icon: SiAdobe, color: red-300 }]
+tools:
+  [
+    { name: Figma, slug: figma, icon: SiFigma, color: pink-300 },
+    { name: Adobe Creative Suite, slug: adobe-creative-suite, icon: SiAdobe, color: red-300 },
+  ]
 social:
   [
     { name: GitHub, url: https://github.com/EmreYYZ, icon: SiGithub, color: gray-900 },
@@ -26,6 +30,7 @@ social:
   ]
 
 facts: ["Did you know that I was a product designer with 2 years of experience before I changed careers?"]
+date: "1990-01-01"
 ---
 
 # About me
