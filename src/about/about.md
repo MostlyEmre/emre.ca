@@ -9,6 +9,7 @@ skills:
     { name: JavaScript, slug: javascript, icon: SiJavascript, color: yellow-300 },
     { name: TypeScript, slug: typescript, icon: SiTypescript, color: blue-300 },
     { name: React JS, slug: react, icon: SiReact, color: purple-300 },
+    { name: Puppeteer, slug: puppeteer, icon: SiGooglechrome, color: purple-300 },
     { name: Gatsby JS, slug: gatsby, icon: SiGatsby, color: pink-300 },
     { name: GraphQL, slug: graphql, icon: SiGraphql, color: purple-300 },
     { name: Firebase, slug: firebase, icon: SiFirebase, color: yellow-300 },
