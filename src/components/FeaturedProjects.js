@@ -5,7 +5,7 @@ import { ProjectCards } from "./ProjectCards";
 const FeaturedProjects = () => {
   const data = useStaticQuery(graphql`
     query FeaturedProjects {
-      allMdx(filter: { frontmatter: { category: { eq: "Code" }, featured: { eq: true } } }) {
+      allMdx(filter: { frontmatter: { category: { eq: "Code" }, featured: { eq: true } } }, sort: { fields: frontmatter___date, order: DESC }) {
         nodes {
           frontmatter {
             title
