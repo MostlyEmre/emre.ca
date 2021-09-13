@@ -1,7 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { v4 as uuidv4 } from "uuid";
-import { SmallProjectCard } from "./SmallProjectCard";
 import { ProjectCards } from "./ProjectCards";
 
 const FeaturedProjects = () => {

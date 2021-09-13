@@ -4,7 +4,7 @@ import { EmojiProvider, Emoji } from "react-apple-emojis";
 import emojiData from "react-apple-emojis/lib/data.json";
 
 const DevProjectCard = ({ project }) => {
-  const { title, tech, description, features, duration, solo, wip, type, live, source, featured } = project.frontmatter;
+  const { title, tech, description, features, duration, solo, wip, type, live, source } = project.frontmatter;
 
   return (
     <div className="bg-gray-100 border-4 border-gray-300 flex flex-col justify-between md:mr-8 max-w-sm mb-8">
@@ -113,17 +113,32 @@ const DevProjectCard = ({ project }) => {
       {live ? (
         <div>
           <div className="grid border-t-4 border-gray-300 grid-cols-2">
-            <a href={live} className="animation py-4 px-6 text-center  text-gray-50 bg-purple-500 hover:bg-purple-700 font-bold uppercase" target="_blank" rel="noopener noreferrer">
+            <a
+              href={live}
+              className="animation py-4 px-6 text-center  text-gray-50 bg-purple-500 hover:bg-purple-700 font-bold uppercase"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Live Site
             </a>
-            <a href={source} className="animation py-4 px-6 text-center text-gray-900 bg-gray-50 hover:bg-gray-200" target="_blank" rel="noopener noreferrer">
+            <a
+              href={source}
+              className="animation py-4 px-6 text-center text-gray-900 bg-gray-50 hover:bg-gray-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="font-bold uppercase">Source Code</button>
             </a>
           </div>
         </div>
       ) : (
         <div className="grid border-t-4 border-gray-300 grid-cols-1">
-          <a href={source} className="animation py-4 px-6 text-center text-gray-900 bg-gray-50 hover:bg-gray-200" target="_blank" rel="noopener noreferrer">
+          <a
+            href={source}
+            className="animation py-4 px-6 text-center text-gray-900 bg-gray-50 hover:bg-gray-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="font-bold uppercase">Source Code</button>
           </a>
         </div>

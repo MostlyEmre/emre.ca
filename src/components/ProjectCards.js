@@ -21,6 +21,7 @@ export const ProjectCards = ({ projects, category }) => {
       </section>
     );
   }
+
   return (
     <section className="max-w-4xl mt-3 grid grid-cols-1 sm:grid-cols-2">
       {projects.map((project) =>
@@ -43,6 +44,8 @@ export const ProjectCards = ({ projects, category }) => {
             slug={project.frontmatter.slug}
             tech={project.frontmatter.tech}
             description={project.frontmatter.description}
+            subcategory={project.frontmatter.subcategory}
+            date={project.frontmatter.date}
           />
         )
       )}
