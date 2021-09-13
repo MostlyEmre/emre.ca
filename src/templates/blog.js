@@ -41,7 +41,8 @@ export const query = graphql`
           slug
           tech
           category
-          date
+          rawDate: date(formatString: "X")
+          date(fromNow: true)
         }
         timeToRead
         wordCount {

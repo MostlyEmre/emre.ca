@@ -50,6 +50,8 @@ export const query = graphql`
           description
           category
           featured
+          rawDate: date(formatString: "X")
+          date(fromNow: true)
         }
       }
     }

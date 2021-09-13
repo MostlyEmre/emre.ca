@@ -44,6 +44,8 @@ export const query = graphql`
           tech
           description
           category
+          rawDate: date(formatString: "X")
+          date(fromNow: true)
         }
       }
     }
