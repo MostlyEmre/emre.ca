@@ -44,10 +44,11 @@ export const query = graphql`
           title
           slug
           tech
-          date
           description
           category
           subcategory
+          rawDate: date(formatString: "X")
+          date(fromNow: true)
         }
       }
     }
