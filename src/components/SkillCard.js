@@ -9,7 +9,7 @@ const SkillCard = ({ skill }) => {
 
   return (
     <motion.div className={`mr-2 mb-2 cursor-default flex-grow`}>
-      <div className={`flex hover:bg-${skill.color} items-center justify-center font-bold bg-gray-100 py-1 px-3 text-gray-900 text-lg`}>
+      <div className={`animation flex hover:bg-${skill.color} items-center justify-center font-bold bg-gray-100 py-1 px-3 text-gray-900 text-lg`}>
         <span>{icon}</span>
         <span className={`ml-2 font-medium`}>{skill.name}</span>
       </div>
