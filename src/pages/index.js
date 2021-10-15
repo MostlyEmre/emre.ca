@@ -5,32 +5,13 @@ import { PastClients } from "../components/PastClients";
 import { Layout } from "../components/Layout";
 import { Helmet } from "react-helmet";
 import FeaturedProjects from "../components/FeaturedProjects";
-import { EmojiProvider, Emoji } from "react-apple-emojis";
-import emojiData from "react-apple-emojis/lib/data.json";
+import { JobCard } from "../components/JobCard";
+
 // markup
 const IndexPage = () => {
   return (
     <Layout>
       {/* JOB TITLE AND LOCATION */}
-      <div className="max-w-md border-b-2 pb-2">
-        <div className="flex cursor-default">
-          <EmojiProvider data={emojiData}>
-            <Emoji className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4" name="astronaut" width={32} />
-          </EmojiProvider>
-          {/* <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">🦄</div> */}
-          <div>
-            <p className="font-normal text-xl sm:text-2xl mt-2 mb-0 inline-block text-gray-900">Web Developer</p>
-            <p className="font-light text-gray-400 text-sm">Ex-Product Designer</p>
-          </div>
-        </div>
-        <div className="flex cursor-default">
-          <EmojiProvider data={emojiData}>
-            <Emoji className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4" name="round-pushpin" width={32} />
-          </EmojiProvider>
-
-          <p className="font-normal text-xl sm:text-2xl my-2 inline-block text-gray-900">Toronto, ON</p>
-        </div>
-      </div>
       <Helmet>
         <title>🏠 Home | Emre's Space</title>
       </Helmet>
