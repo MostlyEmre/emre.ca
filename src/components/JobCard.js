@@ -3,7 +3,7 @@ import { EmojiProvider, Emoji } from "react-apple-emojis";
 import emojiData from "react-apple-emojis/lib/data.json";
 export const JobCard = () => {
   return (
-    <div className="hidden md:flex dinocursor pl-6 pr-8 border-r-8 border-gray-100 py-2">
+    <div className="animation hidden md:flex dinocursor pl-6 pr-8 border-r-8 border-gray-200 hover:border-indigo-400 py-2">
       <div className="self-center">
         <div className="flex">
           <EmojiProvider data={emojiData}>
