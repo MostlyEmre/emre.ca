@@ -9,7 +9,7 @@ solo: true
 type: "Website"
 live: "https://emre.ca"
 wip: false
-featured: true
+featured: false
 source: "https://github.com/EmreYYZ/emre.ca"
 tech: ["HTML", "Tailwind CSS", "GatsbyJS", "JavaScript", "Framer Motion"]
 date: "2021-09-12"

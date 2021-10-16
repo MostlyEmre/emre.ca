@@ -31,7 +31,7 @@ const FeaturedProjects = () => {
 
   return (
     <div>
-      <h1 className="h2 my-5">Featured Projects</h1>
+      <h1 className="h2 mt-5">Featured Projects</h1>
       <ProjectCards projects={featured} />
       {/* <div className="grid gap-4 grid-cols-1 md:grid-cols-2 max-w-4xl">
         {featured.map((project) => (
