@@ -12,7 +12,7 @@ const SandboxPost = ({ data }) => {
       <Helmet>
         <title>🌌 {sandbox.frontmatter.title}</title>
       </Helmet>
-      <div className="max-w-xl mt-5 markdown text-justify">
+      <div className="mt-5 markdown text-justify">
         <h1 className="h2">{sandbox.frontmatter.title}</h1>
         <MetaInfoCard
           title={sandbox.frontmatter.title}

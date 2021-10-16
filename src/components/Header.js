@@ -6,7 +6,7 @@ import Social from "./Social";
 
 const Header = () => {
   return (
-    <div className="mt-8 flex flex-wrap justify-between align-middle mr-2 max-w-4xl">
+    <div className="mt-8 flex flex-wrap justify-between align-middle mr-2">
       <div>
         <Navigation>
           <HeaderCard />

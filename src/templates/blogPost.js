@@ -12,7 +12,7 @@ const BlogPost = ({ data }) => {
       <Helmet>
         <title>📝 {blog.frontmatter.title}</title>
       </Helmet>
-      <div className="max-w-xl markdown mt-5 text-justify">
+      <div className=" markdown mt-5 text-justify">
         <h1 className="h2">{blog.frontmatter.title}</h1>
         <p className="text-lg text-gray-600">{blog.frontmatter.description}</p>
         <div className="max-w-md border-b-2 "></div>

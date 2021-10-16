@@ -10,7 +10,7 @@ export const MetaInfoCard = ({ title, tech, duration, live, source, wip, solo })
       </div> */}
       <h2 className="mb-2">Summary</h2>
       <p className="mb-2">
-        {title} is a {solo ? <span>Solo</span> : <p>Group</p>} project made in {duration ? <span>{duration}</span> : null} by using{" "}
+        {title} is a {solo ? <span>Solo</span> : <span>Group</span>} project made in {duration ? <span>{duration}</span> : null} by using{" "}
         {tech.map((tool) =>
           tech.length - 1 > tech.indexOf(tool) ? (
             <span>
