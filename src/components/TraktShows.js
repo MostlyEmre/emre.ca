@@ -62,11 +62,15 @@ const TraktShows = ({ config, tmdbAPI }) => {
   return (
     <div>
       <h3 className="text-2xl mt-5 mb-5 font-bold">Recently watched TV</h3>
-      <div className="flex items-stretch flex-wrap">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {shows.map((show) => (
-          <div key={uuidv4()} className="my-2 bg-gray-200  flex flex-col justify-between text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-72">
+          <div key={uuidv4()} className="w-full bg-gray-200  flex flex-col justify-between text-gray-900 px-3 pt-1 pb-3">
             <div className="mt-2 mb-1 aspect-w-16 aspect-h-9">
-              <img src={show.thumb} className="object-cover border-2 border-gray-100 shadow-md" alt={`${show.show.title}: ${show.episode.title} Thumbnail`} />
+              <img
+                src={show.thumb}
+                className="object-cover border-2 border-gray-100 shadow-md"
+                alt={`${show.show.title}: ${show.episode.title} Thumbnail`}
+              />
             </div>
             <div className="">
               <p className="text-sm font-light">{show.episode.title}</p>

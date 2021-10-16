@@ -17,7 +17,7 @@ const TraktMovies = ({ config, tmdbAPI }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        let watchedMovies = data.slice(0, 2);
+        let watchedMovies = data.slice(0, 3);
 
         watchedMovies.forEach((movie) => {
           let tmdbURL = `https://api.themoviedb.org/3/movie/${movie.movie.ids.tmdb}/images?api_key=${tmdbAPI}`;
@@ -44,7 +44,7 @@ const TraktMovies = ({ config, tmdbAPI }) => {
 
   if (moviesLoading) {
     return (
-      <div className="bg-gray-100 max-w-xl text-lg text-center mb-4">
+      <div className="bg-gray-100 text-lg text-center mb-4">
         <p className="inline-flex items-center cursor-default my-10">
           Loading the latest movies I've watched from <SiTrakt className="inline-block text-red-500 text-xl mx-1" />
           <span className="font-bold">
@@ -60,9 +60,10 @@ const TraktMovies = ({ config, tmdbAPI }) => {
   return (
     <div>
       <h3 className="text-2xl mt-5 mb-5 font-bold">Recently watched movies</h3>
-      <div className="flex items-stretch flex-wrap">
+      {/* <div className="flex items-stretch flex-wrap"> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {movies.map((movie) => (
-          <div key={uuidv4()} className="my-2 bg-gray-200  text-gray-900 px-3 pt-1 pb-3 mr-4 mb-4 w-72">
+          <div key={uuidv4()} className="bg-gray-200 w-full text-gray-900 px-3 pt-1 pb-3">
             <div className="mt-2 mb-1 aspect-w-16 aspect-h-9">
               <img src={movie.thumb} className="object-cover border-2 border-gray-100 shadow-md" alt={`${movie.movie.title} Thumbnail`} />
             </div>
