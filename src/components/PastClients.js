@@ -39,7 +39,7 @@ export const PastClients = () => {
   let finalClients = testimonialData.clientInfo.frontmatter.clients.filter((client) => client.name !== "Citibank");
 
   return (
-    <div className="mb-10 max-w-4xl">
+    <div className=" max-w-4xl">
       <div className="mb-5">
         <h2 className="h2 mb-5">Past Clients</h2>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1 lg:gap-2">
