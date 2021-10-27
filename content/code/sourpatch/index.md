@@ -3,7 +3,8 @@ title: "SourPatch"
 slug: "sourpatch"
 category: "Code"
 description: "A digital wellbeing extension that automatically hides anxiety driving 'eksisozluk.com' features."
-features: ["No Favorite Count", "No Karma Count", "No Karma Badges", "No 'Eksi Seyler' References", "No 'Pena' Videos", "Persistent Settings"]
+features:
+  ["Hide Favorite Count", "Hide Karma Count", "Hide Karma Badges", "Hide 'Eksi Seyler' References", "Hide 'Pena' Videos", "Persistent Settings"]
 duration: "1 week"
 solo: true
 type: "Extension"
