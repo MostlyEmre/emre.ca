@@ -11,7 +11,7 @@ export const JobCard = () => {
           </EmojiProvider>
           {/* <div className="inline-block self-center text-2xl sm:text-3xl mr-2 sm:mr-4">🦄</div> */}
           <div>
-            <p className="font-normal text-xl sm:text-2xl mt-2 mb-0 inline-block text-gray-600">Web Developer</p>
+            <p className="font-normal text-xl sm:text-2xl mt-2 mb-0 inline-block text-gray-600">Front End Developer</p>
             <p className="font-light text-gray-500 text-sm">Ex-Product Designer</p>
           </div>
         </div>
