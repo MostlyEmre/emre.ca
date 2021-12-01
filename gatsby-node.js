@@ -45,6 +45,8 @@ exports.createPages = async function ({ graphql, actions }) {
           id
           frontmatter {
             slug
+            live
+            source
           }
         }
       }

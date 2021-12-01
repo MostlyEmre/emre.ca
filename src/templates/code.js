@@ -54,6 +54,8 @@ export const query = graphql`
           tech
           description
           category
+          live
+          source
           featured
           rawDate: date(formatString: "X")
           date(fromNow: true)
@@ -72,6 +74,8 @@ export const query = graphql`
           description
           category
           featured
+          live
+          source
         }
       }
     }
